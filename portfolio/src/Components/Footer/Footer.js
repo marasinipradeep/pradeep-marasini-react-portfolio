@@ -16,8 +16,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "lightgray",
     textAlign: "center",
     [theme.breakpoints.down("xs")]:{
-      position:"inherit",
-      bottom:"10"
+      position:"fixed"
       
     }
    

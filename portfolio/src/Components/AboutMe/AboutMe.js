@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
@@ -14,6 +14,9 @@ import { Paper, Grid, ButtonBase } from '@material-ui/core';
 
 import portfolio from "../Images/pradeepPhoto.jpg"
 import "./AboutMe.css"
+
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -34,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: '100%',
         maxHeight: '100%',
         borderRadius: "40px",
+        display: "block",
+        marginLeft: "auto",
+        marginRight: "auto",
     },
     aboutMeTitle: {
         textAlign: "center",
@@ -50,10 +56,10 @@ export default function AboutMe() {
 
     const classes = useStyles();
 
-    const [title,setTitle] =useState("About Me")
-    const [name,setName] =useState("Pradeep Marasini")
-    const [position,setPosition] =useState("Full Stack Web Developer")
-    const [aboutMe,setAboutMe] =useState("Full Stack Web Developer with a background in electronics and communication engineering, utilising experience in banking / payment application, embedded system and agile methodology. Awarded as “Best IT Supporter” and is a strong communicator to work effectively with end-users and the team. Motivated to implement innovative technology on real world problems, to make life easier. Demonstrated excellent people-oriented service and know how to handle difficult requests while prioritising work.")
+    const [title, setTitle] = useState("About Me")
+    const [name, setName] = useState("Pradeep Marasini")
+    const [position, setPosition] = useState("Full Stack Web Developer")
+    const [aboutMe, setAboutMe] = useState("Full Stack Web Developer with a background in electronics and communication engineering, utilising experience in banking / payment application, embedded system and agile methodology. Awarded as “Best IT Supporter” and is a strong communicator to work effectively with end-users and the team. Motivated to implement innovative technology on real world problems, to make life easier. Demonstrated excellent people-oriented service and know how to handle difficult requests while prioritising work.")
 
     return (
 
@@ -71,7 +77,13 @@ export default function AboutMe() {
                     </Grid>
 
                     <Grid item xs={12} md={9}>
-                        <Typography variant="h5" color="primary" className={classes.aboutMe}>{aboutMe}</Typography>
+                        {/* <Typography variant="h5" color="primary" className={classes.aboutMe}>{aboutMe}</Typography> */}
+                        <Container>
+                            <Box my={4} >
+                                <Typography variant="h5"  >{aboutMe}</Typography>
+
+                            </Box>
+                        </Container>
                     </Grid>
                 </Grid>
 
