@@ -15,11 +15,11 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         padding: theme.spacing(2),
         margin: '20px',
-        maxWidth:"100%",
+        maxWidth: "100%",
         backgroundColor: "rgba(8, 119, 13, 0.623)",
-        textAlign:"center",
+        textAlign: "center",
+        borderRadius: "50px"
 
-        borderRadius:"50px"
     },
 
 
@@ -37,37 +37,36 @@ export default function ContactMe() {
             <Paper className={classes.paper}>
                 <Grid item xs container spacing={3}>
 
-                <Grid item xs={12} md={12}>
-                        <Link component="button" variant="h6" >DownLoad CV <Assignment /></Link>
+                    <Grid item xs={12} md={12}>
+                        <Link component="button" variant="h5" >
+                        <a href="https://drive.google.com/file/d/1HOuBSJHaknldgLrKM_jzEGyNSUIMiZp1/view" target="_blank">DownLoad CV </a><Assignment /></Link>
 
                     </Grid>
 
                     <Grid item xs={12} md={12}>
-                        <Typography component="address" variant="h6" >
-                        Email <Email />
-                        <Link component="button" variant="h6">
-                         marasinipradeep@gmail.com</Link>
-                        </Typography>  
-
+                        <Typography component="address" variant="h5" > Email <Email />
+                            <Link component="button" variant="h6"> 
+                            marasinipradeep@gmail.com</Link>
+                        </Typography>
                     </Grid>
 
-                    
+
 
                     <Grid item xs={12} md={12}>
-                    <Typography  variant="h6" >
-                        Phone<Phone />: <Link variant="h6" > 0420719901</Link>
+                        <Typography variant="h5" >
+                            Phone<Phone />: <Link variant="h6" > 0420719901</Link>
                         </Typography>
 
                     </Grid>
                     <Grid item xs={12} md={12}>
-                         <Typography component="address" variant="h6" >
-                         Address<Home /> : 4/10 Lurline Av, Gilles Plain South Australia
+                        <Typography component="address" variant="h5" >
+                            Address<Home /> : 4/10 Lurline Av, Gilles Plain South Australia
                             </Typography>
                     </Grid>
 
-                    
 
-                   
+
+
 
 
                 </Grid>
