@@ -1,12 +1,11 @@
 import React, { createContext, useReducer, useContext } from 'react'
-import API from "./API"
+import DATA from "./API"
 
 const ProjectsContext = createContext();
 const { Provider } = ProjectsContext;
 
 const reducer = (state, action) => {
-   console.log("API");
-   console.log(API)
+  
     switch (action.type) {
         case "loadAndSet":
             return {
@@ -27,7 +26,7 @@ const reducer = (state, action) => {
 
 function ProjectsProvider({ value = [], ...props }) {
 
-    const [state, dispatch] = useReducer(reducer,API )
+    const [state, dispatch] = useReducer(reducer,DATA )
         
     return <Provider value={[state, dispatch]}{...props} />
 }

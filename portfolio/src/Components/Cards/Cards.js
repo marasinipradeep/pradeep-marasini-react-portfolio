@@ -1,18 +1,8 @@
 import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+import { Card, CardHeader, CardMedia, CardContent, CardActions, Collapse, Avatar, IconButton, Typography } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { LinkedIn, GitHub, Facebook } from '@material-ui/icons';
@@ -24,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 345,
         margin: "50px"
-
     },
     media: {
         height: 0,
@@ -42,9 +31,7 @@ const useStyles = makeStyles((theme) => ({
     },
     avatar: {
         backgroundColor: red[500],
-    },
-    newCard: {
-        marginTop: "20px"
+        fontSize: "35px"
     }
 }));
 
@@ -52,10 +39,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Cards() {
 
+    //importing useProject context 
     const [state, dispatch] = useProjectsContext();
-    console.log("inside Cards")
-    console.log(state)
-
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
@@ -67,7 +52,7 @@ export default function Cards() {
         <>
             {state.length ? (
                 <div>
-                    {/* <Card className={classes.root}> */}
+
                     <Grid item xs container spacing={3} >
                         {state.map((project, i) => (
 
@@ -75,9 +60,11 @@ export default function Cards() {
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={<Avatar aria-label="recipe"
-                                            className={classes.avatar}>R</Avatar>}
+                                            className={classes.avatar}>{project.fields.projectName.charAt(0)}</Avatar>}
                                         action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
+                                        titleTypographyProps={{variant:"h4"}}
                                         title={project.fields.projectName}
+                                        subheaderTypographyProps={{variant:"subheader"}}
                                         subheader={project.fields.date}
                                     />
 
@@ -91,7 +78,7 @@ export default function Cards() {
                                         </div>
                                     ))}
                                     <CardContent>
-                                        <Typography variant="body2" color="textSecondary" component="p">
+                                        <Typography variant="h6" color="textPrimary" component="p">
                                             {project.fields.description}
                                         </Typography>
                                     </CardContent>
@@ -103,6 +90,7 @@ export default function Cards() {
                                             className={clsx(classes.expand, {
                                                 [classes.expandOpen]: expanded,
                                             })}
+                                            
                                             onClick={handleExpandClick}
                                             aria-expanded={expanded}
                                             aria-label="show more"
