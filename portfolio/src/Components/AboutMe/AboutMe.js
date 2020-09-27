@@ -1,23 +1,10 @@
 import React, { useState } from 'react';
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-ui/core';
 
-
-import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Grid, ButtonBase } from '@material-ui/core';
-
-
-
+//Import profile image
 import portfolio from "../Images/pradeepPhoto.jpg"
-import "./AboutMe.css"
 
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-
+//Using custom css
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -57,6 +44,7 @@ export default function AboutMe() {
 
     const classes = useStyles();
 
+    //Setting state
     const [title, setTitle] = useState("About Me")
     const [name, setName] = useState("Pradeep Marasini")
     const [position, setPosition] = useState("Full Stack Web Developer")
@@ -68,9 +56,7 @@ export default function AboutMe() {
 
             <Paper className={classes.paper}>
                 <Typography variant="h2" className={classes.aboutMeTitle} gutterBottom >{title}</Typography>
-
                 <Grid item xs container spacing={3}>
-
                     <Grid item xs={12} md={3} className={classes.aboutMe}>
                         <img className={classes.img} alt="complex" src={portfolio} />
                         <Typography variant="h4">{name}</Typography>
