@@ -22,18 +22,15 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         padding: theme.spacing(2),
-        margin: '10px',
+        margin: '30px',
         maxWidth: "auto",
-        backgroundColor: "red"
+        backgroundColor: "lightblue",
+        color:"white"
     },
-    image: {
+    
+    img: {
         width: 256,
         height: 256,
-    },
-    img: {
-        width: 200,
-        height: 200,
-        margin: 'auto',
         display: 'block',
         maxWidth: '100%',
         maxHeight: '100%',
@@ -53,18 +50,19 @@ export default function AboutMe() {
                 <Typography variant="h2" >
                     About Me
                     </Typography>
-                <Typography variant="h4">
+                
+
+                <Grid item xs container spacing={3}>
+
+                    <Grid item xs={12} md={3}>
+                            <img className={classes.img} alt="complex" src={portfolio} />
+                            <Typography variant="h4">
                     Pradeep Marasini
                     </Typography>
                 <Typography gutterBottom variant="subtitle1">
                     Full Stack Web Developer
                     </Typography>
 
-
-                <Grid item xs container spacing={3}>
-
-                    <Grid item xs={12} md={3}>
-                            <img className={classes.img} alt="complex" src={portfolio} />
                     </Grid>
                     
                     <Grid item xs={12} md={9}>

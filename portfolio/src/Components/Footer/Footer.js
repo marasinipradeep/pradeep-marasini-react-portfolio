@@ -39,7 +39,6 @@ function Footer() {
         <Typography component="p">
           @2020 All right reserved
         </Typography>
-     
     </footer>
   );
 }

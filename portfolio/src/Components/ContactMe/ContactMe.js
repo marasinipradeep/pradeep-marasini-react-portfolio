@@ -1,19 +1,12 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import IconButton from '@material-ui/core/IconButton';
 import { Typography, Link } from '@material-ui/core';
-import { LinkedIn, GitHub, Facebook, Assignment,Email, Phone} from '@material-ui/icons';
+import { LinkedIn, GitHub, Facebook, Assignment, Email, Phone, Home } from '@material-ui/icons';
 
 
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Grid, ButtonBase } from '@material-ui/core';
+import { Paper, Grid } from '@material-ui/core';
 
 
-
-import portfolio from "../Images/pradeepPhoto.jpg"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -37,42 +30,67 @@ export default function ContactMe() {
 
         <div className={classes.root}>
 
+
             <Paper className={classes.paper}>
+
+
+                <Grid item xs container spacing={3} bottomG>
+
+                    <Grid item xs={6} md={3}>
+                        <Link component="button" variant="h6" >Linkd<LinkedIn /> </Link>
+
+                    </Grid>
+
+                    <Grid item xs={6} md={3}>
+                        <Link component="button" variant="h6" >Github<GitHub /> </Link>
+
+                    </Grid>
+                    <Grid item xs={6} md={3}>
+                        <Link component="button" variant="h6" >Facebook<Facebook /> </Link>
+
+                    </Grid>
+
+                    <Grid item xs={6} md={3}>
+                        <Link component="button" variant="h6" >DownLoad CV <Assignment /></Link>
+
+                    </Grid>
+                </Grid>
 
 
                 <Grid item xs container spacing={3}>
 
-                    <Grid item xs={6} md={3}>
-                         <Link component="button" variant="h6" >Linkd<LinkedIn /> </Link>
-                    
+                
+
+                    <Grid item xs={12} md={6}>
+                        <Typography component="address" variant="h6" >
+                        Email <Email />
+                        <Link component="button" variant="h6">
+                         marasinipradeep@gmail.com</Link>
+                        </Typography>  
+
                     </Grid>
 
-                    <Grid item xs={6} md={3}>
-                         <Link component="button" variant="h6" >Github<GitHub /> </Link>
-                    
-                    </Grid>
-                    <Grid item xs={6} md={3}>
-                         <Link component="button" variant="h6" >Facebook<Facebook /> </Link>
-                    
+                    <Grid item xs={12} md={6}>
+                         <Typography component="address" variant="h6" >
+                         Address<Home /> : 4/10 Lurline Av, Gilles Plain South Australia
+                            </Typography>
                     </Grid>
 
-                    <Grid item xs={6} md={3}>
-                         <Link component="button" variant="h6" >DownLoad CV <Assignment/></Link>
-                    
+                    <Grid item xs={12} md={6}>
+                    <Typography  variant="h6" >
+                        Phone<Phone />: <Link variant="h6" > 0420719901</Link>
+                        </Typography>
+
                     </Grid>
 
-                    <Grid item xs={6} md={3}>
-                    Email <Email/>   <Link component="button" variant="h6" >marasinipradeep@gmail.com</Link>
                     
-                    </Grid>
-
-                    <Grid item xs={6} md={3}>
-                    Phone<Phone/>: <Link component="button" variant="h6" > 0420719901</Link>
-                    
-                    </Grid>
 
                    
+
+
                 </Grid>
+
+
 
             </Paper>
         </div>
