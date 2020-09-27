@@ -1,6 +1,7 @@
 
 import reactPortfolio from "../Images/reactPortfolio.png";
 import binOut from "../Images/binOut.png";
+import musicApp from "../Images/musicApp.png";
 
 export default [
     {
@@ -38,7 +39,7 @@ export default [
 
     {
         sys: {
-            id: "1"
+            id: "2"
         },
         fields: {
 
@@ -61,6 +62,38 @@ export default [
                     fields: {
                         file: {
                             url: binOut
+                        }
+                    }
+                },
+            ]
+        }
+    },
+
+    {
+        sys: {
+            id: "3"
+        },
+        fields: {
+
+            date:"July 10 2020",
+            projectName: "MUSIC APP",
+            description:
+                "Music app is a music application that plays a song based upon responses to questions.",
+            githubLink: "https://github.com/marasinipradeep/music-app",
+            liveLink: "https://marasinipradeep.github.io/music-app/",
+
+            technoligiesUsed: [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Jquery",
+                "Youtube/GIPHY APIS"
+            ],
+            images: [
+                {
+                    fields: {
+                        file: {
+                            url: musicApp
                         }
                     }
                 },
