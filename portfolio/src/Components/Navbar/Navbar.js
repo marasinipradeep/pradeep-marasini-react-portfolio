@@ -7,11 +7,12 @@ import {Home,WorkOutlineOutlined,Assignment,PermContactCalendar,Face} from '@mat
 
 
 import "./Navbar.css"
+import { Grid } from '@material-ui/core';
 
 export default function Navbar() {
 
   return (
-    <nav >
+    <Grid container>
       <AppBar  position="static">
         <Toolbar>
           <IconButton color="inherit"><Face />About</IconButton>
@@ -20,6 +21,6 @@ export default function Navbar() {
         </Toolbar>
         
       </AppBar>
-    </nav>
+    </Grid>
   );
 }

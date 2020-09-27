@@ -1,23 +1,29 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Typography from '@material-ui/core/Typography';
+import {Typography,useMediaQuery} from '@material-ui/core';
 
 import "./Footer.css"
 
 import { makeStyles } from '@material-ui/core/styles';
 
+
+
 const useStyles = makeStyles((theme) => ({
 
   footer:{
     position:"absolute",
-    bottom: "10",
+    bottom: "0",
     width: "100%",
     backgroundColor: "lightgray",
-    textAlign: "center"
+    textAlign: "center",
+    [theme.breakpoints.down("xs")]:{
+      position:"fixed",
+      bottom:"10"
+      
+    }
+   
   }
-  
-
 }))
+
  
 
  
@@ -27,7 +33,8 @@ function Footer() {
  
  
   return (
-    <footer className={classes.footer}>
+   
+    <footer className={classes.footer} >
      
         <Typography variant="h5" component="h4">
           Pradeep Marasini
@@ -40,8 +47,5 @@ function Footer() {
   );
 }
  
-Footer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
  
 export default Footer;

@@ -14,7 +14,6 @@ import { Paper, Grid, ButtonBase } from '@material-ui/core';
 
 
 import portfolio from "../Images/pradeepPhoto.jpg"
-import "./AboutMe.css"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function AboutMe() {
+export default function ContactMe() {
 
     const classes = useStyles();
 
