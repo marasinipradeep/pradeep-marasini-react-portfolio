@@ -2,6 +2,7 @@
 import reactPortfolio from "../Images/reactPortfolio.png";
 import binOut from "../Images/binOut.png";
 import musicApp from "../Images/musicApp.png";
+import weatherDashboard from "../Images/weatherDashboard.png";
 
 export default [
     {
@@ -10,7 +11,7 @@ export default [
         },
         fields: {
 
-            date:"September 15 2020",
+            date:"September 27 2020",
             projectName: "REACT PORTFOLIO",
             description:
                 "This is Simple portfolio which is developed using React,React router, React Hooks and Material UI.",
@@ -94,6 +95,38 @@ export default [
                     fields: {
                         file: {
                             url: musicApp
+                        }
+                    }
+                },
+            ]
+        }
+    },
+
+    {
+        sys: {
+            id: "4"
+        },
+        fields: {
+
+            date:"June 01 2020",
+            projectName: "WEATHER-DASHBOARD",
+            description:
+                "This is a weather application's. It is using third-party APIs to access weather data and weather dashboard functionality is build by dynamically updated HTML, CSS, JAVASCRIPT and JQUERY.",
+            githubLink: "https://github.com/marasinipradeep/weather_dashboard",
+            liveLink: "https://marasinipradeep.github.io/weather_dashboard/",
+
+            technoligiesUsed: [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Jquery",
+                "Weather API"
+            ],
+            images: [
+                {
+                    fields: {
+                        file: {
+                            url: weatherDashboard
                         }
                     }
                 },
