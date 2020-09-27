@@ -16,16 +16,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "lightgray",
     textAlign: "center",
     [theme.breakpoints.down("xs")]:{
-      position:"fixed",
+      position:"inherit",
       bottom:"10"
       
     }
    
   }
 }))
-
- 
-
  
 function Footer() {
 
@@ -40,7 +37,7 @@ function Footer() {
           Pradeep Marasini
         </Typography>
         <Typography component="p">
-          @2018 All right reserved
+          @2020 All right reserved
         </Typography>
      
     </footer>

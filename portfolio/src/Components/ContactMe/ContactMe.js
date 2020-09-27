@@ -4,8 +4,8 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import { LinkedIn, GitHub, Facebook } from '@material-ui/icons';
+import { Typography, Link } from '@material-ui/core';
+import { LinkedIn, GitHub, Facebook, Assignment,Email, Phone} from '@material-ui/icons';
 
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -23,21 +23,10 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         margin: '10px',
         maxWidth: "auto",
-        backgroundColor: "red"
+        backgroundColor: "white"
     },
-    image: {
-        width: 256,
-        height: 256,
-    },
-    img: {
-        width: 200,
-        height: 200,
-        margin: 'auto',
-        display: 'block',
-        maxWidth: '100%',
-        maxHeight: '100%',
-        borderRadius:"40px"
-    },
+
+
 }));
 
 export default function ContactMe() {
@@ -49,29 +38,40 @@ export default function ContactMe() {
         <div className={classes.root}>
 
             <Paper className={classes.paper}>
-                <Typography variant="h2" >
-                    About Me
-                    </Typography>
-                <Typography variant="h4">
-                    Pradeep Marasini
-                    </Typography>
-                <Typography gutterBottom variant="subtitle1">
-                    Full Stack Web Developer
-                    </Typography>
 
 
                 <Grid item xs container spacing={3}>
 
-                    <Grid item xs={12} md={3}>
-                            <img className={classes.img} alt="complex" src={portfolio} />
-                    </Grid>
+                    <Grid item xs={6} md={3}>
+                         <Link component="button" variant="h6" >Linkd<LinkedIn /> </Link>
                     
-                    <Grid item xs={12} md={9}>
-                        <Typography variant="h5" color="primary">
-                            Full Stack Web Developer with a background in electronics and communication engineering, utilising experience in banking / payment application, embedded system and agile methodology. Awarded as “Best IT Supporter” and is a strong communicator to work effectively with end-users and the team. Motivated to implement innovative technology on real world problems, to make life easier. Demonstrated excellent people-oriented service and know how to handle difficult requests while prioritising work.
-                            </Typography>
-
                     </Grid>
+
+                    <Grid item xs={6} md={3}>
+                         <Link component="button" variant="h6" >Github<GitHub /> </Link>
+                    
+                    </Grid>
+                    <Grid item xs={6} md={3}>
+                         <Link component="button" variant="h6" >Facebook<Facebook /> </Link>
+                    
+                    </Grid>
+
+                    <Grid item xs={6} md={3}>
+                         <Link component="button" variant="h6" >DownLoad CV <Assignment/></Link>
+                    
+                    </Grid>
+
+                    <Grid item xs={6} md={3}>
+                    Email <Email/>   <Link component="button" variant="h6" >marasinipradeep@gmail.com</Link>
+                    
+                    </Grid>
+
+                    <Grid item xs={6} md={3}>
+                    Phone<Phone/>: <Link component="button" variant="h6" > 0420719901</Link>
+                    
+                    </Grid>
+
+                   
                 </Grid>
 
             </Paper>
