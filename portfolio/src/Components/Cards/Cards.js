@@ -15,6 +15,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import { LinkedIn, GitHub, Facebook } from '@material-ui/icons';
 
 import { useProjectsContext } from "../Utils/ProjectsContext"
 
@@ -41,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
         backgroundColor: red[500],
     },
+    newCard: {
+        marginTop: "20px"
+    }
 }));
 
 
@@ -61,67 +65,69 @@ export default function Cards() {
     return (
         <>
             {state.length ? (
-                <Card className={classes.root}>
-                    {state.map((project, i) => (
-                        <div>
-                            <CardHeader
-                                avatar={<Avatar aria-label="recipe" className={classes.avatar}>R</Avatar>}
-                                action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
-                                title={project.fields.projectName}
-                                subheader={project.fields.date}
-                            />
+                <div>
+                    {/* <Card className={classes.root}> */}
+                        {state.map((project, i) => (
+                            <Card className={classes.root}>
+                            <div className={classes.newCard}>
+                                <CardHeader
+                                    avatar={<Avatar aria-label="recipe"
+                                        className={classes.avatar}>R</Avatar>}
+                                    action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
+                                    title={project.fields.projectName}
+                                    subheader={project.fields.date}
+                                />
 
-                            {project.fields.images.map(projectImages => (
-                                <div>
-                                    <CardMedia
-                                        className={classes.media}
-                                        image={projectImages.fields.file.url}
-                                        title="Paella dish"
-                                    />
-                                </div>
-                            ))}
-                            <CardContent>
-                                <Typography variant="body2" color="textSecondary" component="p">
-                                    {project.fields.description}
-                                </Typography>
-                            </CardContent>
-                            <CardActions disableSpacing>
-                                <IconButton aria-label="add to favorites">
-                                    <FavoriteIcon />
-                                </IconButton>
-                                <IconButton aria-label="share">
-                                    <ShareIcon />
-                                </IconButton>
-                                <IconButton
-                                    className={clsx(classes.expand, {
-                                        [classes.expandOpen]: expanded,
-                                    })}
-                                    onClick={handleExpandClick}
-                                    aria-expanded={expanded}
-                                    aria-label="show more"
-                                >
-                                    <ExpandMoreIcon />
-                                </IconButton>
-                            </CardActions>
-                            <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                {project.fields.images.map(projectImages => (
+                                    <div>
+                                        <CardMedia
+                                            className={classes.media}
+                                            image={projectImages.fields.file.url}
+                                            title="Paella dish"
+                                        />
+                                    </div>
+                                ))}
                                 <CardContent>
-                                    <Typography paragraph>Technologies Used:</Typography>
-                                    {project.fields.technoligiesUsed.map(technoligiesUsed => (
-                                        <div>
-                                            <Typography paragraph>
-                                                {technoligiesUsed}
-                                            </Typography>
-                                        </div>
-
-                                    ))}
-
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        {project.fields.description}
+                                    </Typography>
                                 </CardContent>
+                                <CardActions disableSpacing>
+                                    <IconButton aria-label="add to favorites" ><LinkedIn /></IconButton>
+                                    <IconButton aria-label="share" onClick={() => window.open((project.fields.githubLink), '_blank')}><GitHub /></IconButton>
 
-                            </Collapse>
+                                    <IconButton
+                                        className={clsx(classes.expand, {
+                                            [classes.expandOpen]: expanded,
+                                        })}
+                                        onClick={handleExpandClick}
+                                        aria-expanded={expanded}
+                                        aria-label="show more"
+                                    >
+                                        <ExpandMoreIcon />
+                                    </IconButton>
+                                </CardActions>
+                                <Collapse in={expanded} timeout="auto" unmountOnExit>
+                                    <CardContent>
+                                        <Typography paragraph>Technologies Used:</Typography>
+                                        {project.fields.technoligiesUsed.map(technoligiesUsed => (
+                                            <div>
+                                                <Typography paragraph>
+                                                    {technoligiesUsed}
+                                                </Typography>
+                                            </div>
 
-                        </div>
-                    ))}
-                </Card>
+                                        ))}
+
+                                    </CardContent>
+
+                                </Collapse>
+
+                            </div>
+                            </Card>
+                            ))}
+                   
+                </div>
             ) :
                 (
                     <h3>No projects Found</h3>
