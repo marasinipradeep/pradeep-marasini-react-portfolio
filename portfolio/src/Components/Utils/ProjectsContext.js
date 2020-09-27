@@ -5,10 +5,13 @@ const ProjectsContext = createContext();
 const { Provider } = ProjectsContext;
 
 const reducer = (state, action) => {
+   console.log("API");
+   console.log(API)
     switch (action.type) {
         case "loadAndSet":
             return {
                 ...state,
+             
                 loading: false
             };
         case "loading":
@@ -23,29 +26,9 @@ const reducer = (state, action) => {
 }
 
 function ProjectsProvider({ value = [], ...props }) {
-    const [state, dispatch] = useReducer(reducer, {
-        sys:{
-            id:0,
-        },
-        fields:{
-            projectName:"",
-            description:"",
-            githubLink:"",
-            liveLink:"",
-            demoLink:""
-        },
-        technoligiesUsed:[],
-        images:[
-            {
-                fields:{
-                    file:{
-                        url:""
-                    }
-                }
-            }
-        ]
 
-    });
+    const [state, dispatch] = useReducer(reducer,API )
+        
     return <Provider value={[state, dispatch]}{...props} />
 }
 

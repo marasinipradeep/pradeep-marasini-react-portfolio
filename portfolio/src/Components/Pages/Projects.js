@@ -8,7 +8,9 @@ const useStyles= makeStyles((useTheme)=>({
 
     h1:{
         margin:"50px",
-        textAlign:"center"
+        textAlign:"center",
+        fontSize:"40px"
+        
     }
 
 }))

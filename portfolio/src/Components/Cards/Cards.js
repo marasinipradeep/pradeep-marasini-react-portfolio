@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -16,9 +16,12 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
+import {useProjectsContext} from "../Utils/ProjectsContext"
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    margin:"50px"
   },
   media: {
     height: 0,
@@ -39,7 +42,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
 export default function Cards() {
+
+    const [state,dispatch] = useProjectsContext();
+    console.log("inside Cards")
+    console.log(state)
+
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -60,12 +70,12 @@ export default function Cards() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={state[0].fields.projectName}
+        subheader={state[0].fields.date}
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
+        image={state[0].fields.images[0].fields.file.url}
         title="Paella dish"
       />
       <CardContent>

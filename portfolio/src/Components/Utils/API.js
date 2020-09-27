@@ -8,6 +8,7 @@ export default [
         },
         fields: {
 
+            date:"September 15 2020",
             projectName: "BIN OUT",
             description:
                 "Bin-out is an application which allows users to submit a request for their bins to be taken out for collection when they are unable to.",
