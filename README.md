@@ -56,12 +56,9 @@ The site is "polished."
 
 * Mobile-first design
 
-* Color palette for your site so it doesn't just look like
-the default bootstrap theme or an unstyled HTML site. 
+![Picures](portfolio/src/Components/Images/reactPortfolio.png)
 
-* Font size is large enough to read, and that the colors don't cause eye strain.
-
-* If you want to go above and beyond, try using animations and react component libraries. 
+![Responsive](portfolio/src/Components/Images/rpMobile.png)
 
 ### React
 

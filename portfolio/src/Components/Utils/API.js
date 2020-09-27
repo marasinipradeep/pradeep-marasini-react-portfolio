@@ -142,10 +142,11 @@ export default [
         fields: {
 
             date:"June 01 2016",
-            projectName: "BLB(BRANCHLESS BANKING)",
+            projectName: "BRANCHLESS BANKING",
             description:
                 "Branchless Banking enables a number of banking partners to offer their product and services to far flung districts of Nepal where traditional bank branches are not established.",
-            liveLink: "https://citytech.global/",
+                githubLink:"https://citytech.global/",
+                liveLink: "https://citytech.global/",
 
             technoligiesUsed: [
                 "C/C++",

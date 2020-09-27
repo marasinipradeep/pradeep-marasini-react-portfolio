@@ -5,7 +5,7 @@ import { Card, CardHeader, CardMedia, CardContent, CardActions, Collapse, Avatar
 import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import { LinkedIn, GitHub, Facebook } from '@material-ui/icons';
+import { LinkedIn, GitHub, LiveTv } from '@material-ui/icons';
 
 import { useProjectsContext } from "../Utils/ProjectsContext"
 import { Grid } from '@material-ui/core';
@@ -13,7 +13,7 @@ import { Grid } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 345,
-        margin: "50px"
+        marginLeft:20
     },
     media: {
         height: 0,
@@ -83,8 +83,8 @@ export default function Cards() {
                                         </Typography>
                                     </CardContent>
                                     <CardActions disableSpacing>
-                                        <IconButton aria-label="add to favorites" ><LinkedIn /></IconButton>
-                                        <IconButton aria-label="share" onClick={() => window.open((project.fields.githubLink), '_blank')}><GitHub /></IconButton>
+                                        <IconButton aria-label="live url" onClick={() => window.open((project.fields.liveLink), '_blank')}><LiveTv /></IconButton>
+                                        <IconButton aria-label="Github" onClick={() => window.open((project.fields.githubLink), '_blank')}><GitHub /></IconButton>
 
                                         <IconButton
                                             className={clsx(classes.expand, {
