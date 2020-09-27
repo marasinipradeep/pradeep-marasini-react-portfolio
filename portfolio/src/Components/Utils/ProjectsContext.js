@@ -1,7 +1,7 @@
 import React, { createContext, useReducer, useContext } from 'react'
 import API from "./API"
 
-ProjectContext = createContext([]);
+const ProjectsContext = createContext();
 const { Provider } = ProjectsContext;
 
 const reducer = (state, action) => {

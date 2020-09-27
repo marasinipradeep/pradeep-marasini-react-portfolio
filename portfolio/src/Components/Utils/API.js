@@ -1,5 +1,5 @@
-import webDeveloper from "./images/officeWorker.jpeg";
-import coffeMaker from "./images/coffeMaker.jpeg";
+
+import coffeMaker from "../Images/pradeepPhoto.jpg";
 
 export default [
     {
