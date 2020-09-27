@@ -45,7 +45,7 @@ export default function ContactMe() {
 
                     <Grid item xs={12} md={12}>
                         <Typography component="address" variant="h5" > Email <Email />
-                            <Link component="button" variant="h6"> 
+                            <Link component="button" variant="h5"> 
                             marasinipradeep@gmail.com</Link>
                         </Typography>
                     </Grid>
@@ -54,7 +54,7 @@ export default function ContactMe() {
 
                     <Grid item xs={12} md={12}>
                         <Typography variant="h5" >
-                            Phone<Phone />: <Link variant="h6" > 0420719901</Link>
+                            Phone<Phone />: <Link variant="h5" > 0420719901</Link>
                         </Typography>
 
                     </Grid>

@@ -14,8 +14,7 @@ const useStyles = makeStyles((theme) => ({
 
   root: {
     width: "100%",
-    backgroundColor:"rgba(140, 184, 39, 0.856)",
-    
+    backgroundColor:"rgba(140, 184, 39, 0.856)"
   }
 }))
  
@@ -38,9 +37,9 @@ function Footer() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="LinkedIn" icon={<LinkedIn />} />
-      <BottomNavigationAction label="GitHub" icon={<GitHub />} />
-      <BottomNavigationAction label="Facebook" icon={<Facebook />} />
+      <BottomNavigationAction className={classes.font} label= "LinkedIn" icon={<LinkedIn />} onClick={()=>window.open("https://www.linkedin.com/in/pradeep-marasini-34b322b4/",'_blank')}/>
+      <BottomNavigationAction label="GitHub" icon={<GitHub />} onClick={()=>window.open("https://github.com/marasinipradeep/",'_blank')}/>
+      <BottomNavigationAction label="Facebook" icon={<Facebook />} onClick={()=>window.open("https://www.facebook.com/pmarasini1",'_blank')} />
 
     </BottomNavigation>
     </div>
