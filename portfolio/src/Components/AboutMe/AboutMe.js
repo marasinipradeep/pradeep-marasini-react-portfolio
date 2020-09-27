@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         margin: '15px',
         maxWidth: "auto",
-        backgroundColor: "rgb(1, 104, 543)",
+        backgroundColor: "rgba(89, 33, 22, 0.75)",
         color: "white",
         borderRadius:"50px"
     },
