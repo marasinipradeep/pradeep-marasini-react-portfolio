@@ -14,10 +14,12 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         padding: theme.spacing(2),
-        margin: '10px',
+        margin: '20px',
         maxWidth:"100%",
-        backgroundColor: "white",
-        textAlign:"center"
+        backgroundColor: "rgba(8, 119, 13, 0.623)",
+        textAlign:"center",
+
+        borderRadius:"50px"
     },
 
 

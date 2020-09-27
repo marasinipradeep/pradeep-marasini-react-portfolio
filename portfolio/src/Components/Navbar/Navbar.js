@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(5),
     
+  },
+  appBar:{
+    backgroundColor:"rgb(219, 70, 70)"
   }
   
 }));
@@ -61,7 +64,7 @@ export default function Navbar(props) {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar>
+      <AppBar className={classes.appBar}>
         <Toolbar >
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <Home />HOME

@@ -24,26 +24,27 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         padding: theme.spacing(2),
-        margin: '30px',
+        margin: '15px',
         maxWidth: "auto",
-        backgroundColor: "lightblue",
-        color: "black"
+        backgroundColor: "rgb(1, 104, 543)",
+        color: "white",
+        borderRadius:"50px"
     },
 
     img: {
-        width: 256,
-        height: 256,
+        width: 130,
+        height: 200,
         display: 'block',
         maxWidth: '100%',
         maxHeight: '100%',
-        borderRadius: "40px",
+        borderRadius: "100px",
         display: "block",
         marginLeft: "auto",
         marginRight: "auto",
     },
     aboutMeTitle: {
         textAlign: "center",
-        color: "blue",
+        color: "white",
 
     },
     aboutMe: {
