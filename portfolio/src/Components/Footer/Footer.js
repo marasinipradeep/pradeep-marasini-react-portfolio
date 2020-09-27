@@ -1,44 +1,49 @@
 import React from 'react';
-import {Typography,useMediaQuery} from '@material-ui/core';
-
-import "./Footer.css"
-
+import {Typography} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import {LinkedIn,GitHub,Facebook} from '@material-ui/icons';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 
 
 const useStyles = makeStyles((theme) => ({
 
-  footer:{
-    position:"absolute",
-    bottom: "0",
+  root: {
     width: "100%",
-    backgroundColor: "lightgray",
-    textAlign: "center",
-    [theme.breakpoints.down("xs")]:{
-      position:"fixed"
-      
-    }
-   
+    backgroundColor:"lightgray",
+    
   }
 }))
  
 function Footer() {
 
   const classes =useStyles()
+
+  const [value, setValue] = React.useState(0);
+
  
  
   return (
-   
-    <footer className={classes.footer} >
-     
-        <Typography variant="h5" component="h4">
-          Pradeep Marasini
-        </Typography>
-        <Typography component="p">
-          @2020 All right reserved
-        </Typography>
-    </footer>
+    <div>
+
+    <BottomNavigation
+      value={value}
+      onChange={(event, newValue) => {
+        setValue(newValue);
+      }}
+      showLabels
+      className={classes.root}
+    >
+      <BottomNavigationAction label="LinkedIn" icon={<LinkedIn />} />
+      <BottomNavigationAction label="GitHub" icon={<GitHub />} />
+      <BottomNavigationAction label="Facebook" icon={<Facebook />} />
+
+    </BottomNavigation>
+    </div>
   );
 }
  

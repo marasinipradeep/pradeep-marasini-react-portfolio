@@ -15,8 +15,9 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         padding: theme.spacing(2),
         margin: '10px',
-        maxWidth: "auto",
-        backgroundColor: "white"
+        maxWidth:"100%",
+        backgroundColor: "white",
+        textAlign:"center"
     },
 
 
@@ -32,35 +33,14 @@ export default function ContactMe() {
 
 
             <Paper className={classes.paper}>
+                <Grid item xs container spacing={3}>
 
-                <Grid item xs container spacing={3} bottomG>
-
-                    <Grid item xs={6} md={3}>
-                        <Link component="button" variant="h6" >Linkd<LinkedIn /> </Link>
-
-                    </Grid>
-
-                    <Grid item xs={6} md={3}>
-                        <Link component="button" variant="h6" >Github<GitHub /> </Link>
-
-                    </Grid>
-                    <Grid item xs={6} md={3}>
-                        <Link component="button" variant="h6" >Facebook<Facebook /> </Link>
-
-                    </Grid>
-
-                    <Grid item xs={6} md={3}>
+                <Grid item xs={12} md={12}>
                         <Link component="button" variant="h6" >DownLoad CV <Assignment /></Link>
 
                     </Grid>
-                </Grid>
 
-
-                <Grid item xs container spacing={3}>
-
-                
-
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={12}>
                         <Typography component="address" variant="h6" >
                         Email <Email />
                         <Link component="button" variant="h6">
@@ -69,17 +49,18 @@ export default function ContactMe() {
 
                     </Grid>
 
-                    <Grid item xs={12} md={6}>
-                         <Typography component="address" variant="h6" >
-                         Address<Home /> : 4/10 Lurline Av, Gilles Plain South Australia
-                            </Typography>
-                    </Grid>
+                    
 
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={12}>
                     <Typography  variant="h6" >
                         Phone<Phone />: <Link variant="h6" > 0420719901</Link>
                         </Typography>
 
+                    </Grid>
+                    <Grid item xs={12} md={12}>
+                         <Typography component="address" variant="h6" >
+                         Address<Home /> : 4/10 Lurline Av, Gilles Plain South Australia
+                            </Typography>
                     </Grid>
 
                     
