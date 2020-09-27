@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {AppBar,Toolbar,Typography,CssBaseline,useScrollTrigger,Fab,Zoom,IconButton} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import {KeyboardArrowUp,Home,Description} from '@material-ui/icons';
+import { Link,useHistory } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -61,17 +62,19 @@ ScrollTop.propTypes = {
 
 export default function Navbar(props) {
   const classes = useStyles();
+  //useHistory hook let us navigate through the browser
+  let history = useHistory();
   return (
     <React.Fragment>
       <CssBaseline />
       <AppBar className={classes.appBar}>
         <Toolbar >
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <Home />HOME
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={()=>history.push("/")}>
+           <Home />HOME
           </IconButton>
 
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <Description />PROJECTS
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={()=>history.push("/projects")}>
+         <Description />PROJECTS
           </IconButton>
         </Toolbar>
       </AppBar>
