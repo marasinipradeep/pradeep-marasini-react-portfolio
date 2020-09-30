@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31d108855834135134466bc0a6675018",
+    "revision": "19f9cbf14f756b9d940cfa3b8efde0f1",
     "url": "/pradeep-marasini-react-portfolio/index.html"
   },
   {
-    "revision": "e9ba0168bebd67148a7a",
+    "revision": "19556ae8941e30d19087",
     "url": "/pradeep-marasini-react-portfolio/static/css/main.935cc7a1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pradeep-marasini-react-portfolio/static/js/2.4161ff66.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e9ba0168bebd67148a7a",
-    "url": "/pradeep-marasini-react-portfolio/static/js/main.519d2898.chunk.js"
+    "revision": "19556ae8941e30d19087",
+    "url": "/pradeep-marasini-react-portfolio/static/js/main.f15baab4.chunk.js"
   },
   {
     "revision": "ff43c71e5b872e9b32c5",
