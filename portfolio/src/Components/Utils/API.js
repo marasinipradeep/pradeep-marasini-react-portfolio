@@ -18,8 +18,8 @@ export default [
             description:
                 "This is a portfolio which is developed using React,React router, React Hooks and Material UI.It is fully mobile responsive and fits on small screen.",
             githubLink: "https://github.com/marasinipradeep/pradeep-marasini-react-portfolio",
-            liveLink: "https://marasinipradeep.github.io/pradeep-marasini-react-portfolio/",
-            demoLink: "https://marasinipradeep.github.io/pradeep-marasini-react-portfolio/",
+            liveLink: "https://binout.herokuapp.com/",
+            demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
 
             technoligiesUsed: [
                 "React",
