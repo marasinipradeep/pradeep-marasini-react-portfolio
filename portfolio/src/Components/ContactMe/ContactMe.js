@@ -29,7 +29,7 @@ export default function ContactMe() {
                 <Grid item xs container spacing={3}>
                     <Grid item xs={12} md={12}>
                         <Link component="button" variant="h5" >
-                            <a href="https://drive.google.com/file/d/1HOuBSJHaknldgLrKM_jzEGyNSUIMiZp1/view" target="_blank">DownLoad CV </a><Assignment /></Link>
+                            <a href="https://drive.google.com/file/d/1eFrO_qEzWZDXEq5cyVtMUSyOKI-PjZhF/view?usp=sharing" target="_blank">DownLoad CV </a><Assignment /></Link>
                     </Grid>
 
                     <Grid item xs={12} md={12}>

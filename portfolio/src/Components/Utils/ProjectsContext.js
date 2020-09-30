@@ -10,7 +10,6 @@ const reducer = (state, action) => {
         case "loadAndSet":
             return {
                 ...state,
-             
                 loading: false
             };
         case "loading":
