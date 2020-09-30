@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "19f9cbf14f756b9d940cfa3b8efde0f1",
+    "revision": "fc82ecce4c250f33dbb7d27507eaa8fc",
     "url": "/pradeep-marasini-react-portfolio/index.html"
   },
   {
-    "revision": "19556ae8941e30d19087",
+    "revision": "f89af5d5fee178d85b3a",
     "url": "/pradeep-marasini-react-portfolio/static/css/main.935cc7a1.chunk.css"
   },
   {
-    "revision": "24750acb76a5b44b4554",
-    "url": "/pradeep-marasini-react-portfolio/static/js/2.4161ff66.chunk.js"
+    "revision": "9bfd4bbe9b0b840e2ab5",
+    "url": "/pradeep-marasini-react-portfolio/static/js/2.419a231e.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/pradeep-marasini-react-portfolio/static/js/2.4161ff66.chunk.js.LICENSE.txt"
+    "url": "/pradeep-marasini-react-portfolio/static/js/2.419a231e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "19556ae8941e30d19087",
-    "url": "/pradeep-marasini-react-portfolio/static/js/main.f15baab4.chunk.js"
+    "revision": "f89af5d5fee178d85b3a",
+    "url": "/pradeep-marasini-react-portfolio/static/js/main.0e97b0c7.chunk.js"
   },
   {
     "revision": "ff43c71e5b872e9b32c5",

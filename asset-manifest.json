@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/pradeep-marasini-react-portfolio/static/css/main.935cc7a1.chunk.css",
-    "main.js": "/pradeep-marasini-react-portfolio/static/js/main.f15baab4.chunk.js",
-    "main.js.map": "/pradeep-marasini-react-portfolio/static/js/main.f15baab4.chunk.js.map",
+    "main.js": "/pradeep-marasini-react-portfolio/static/js/main.0e97b0c7.chunk.js",
+    "main.js.map": "/pradeep-marasini-react-portfolio/static/js/main.0e97b0c7.chunk.js.map",
     "runtime-main.js": "/pradeep-marasini-react-portfolio/static/js/runtime-main.9fa0fd76.js",
     "runtime-main.js.map": "/pradeep-marasini-react-portfolio/static/js/runtime-main.9fa0fd76.js.map",
-    "static/js/2.4161ff66.chunk.js": "/pradeep-marasini-react-portfolio/static/js/2.4161ff66.chunk.js",
-    "static/js/2.4161ff66.chunk.js.map": "/pradeep-marasini-react-portfolio/static/js/2.4161ff66.chunk.js.map",
+    "static/js/2.419a231e.chunk.js": "/pradeep-marasini-react-portfolio/static/js/2.419a231e.chunk.js",
+    "static/js/2.419a231e.chunk.js.map": "/pradeep-marasini-react-portfolio/static/js/2.419a231e.chunk.js.map",
     "index.html": "/pradeep-marasini-react-portfolio/index.html",
-    "precache-manifest.e9c3e5cf34f285852950fa6c89b4ec31.js": "/pradeep-marasini-react-portfolio/precache-manifest.e9c3e5cf34f285852950fa6c89b4ec31.js",
+    "precache-manifest.eb3d59d3bdec5315a4e2822363ecb00f.js": "/pradeep-marasini-react-portfolio/precache-manifest.eb3d59d3bdec5315a4e2822363ecb00f.js",
     "service-worker.js": "/pradeep-marasini-react-portfolio/service-worker.js",
     "static/css/main.935cc7a1.chunk.css.map": "/pradeep-marasini-react-portfolio/static/css/main.935cc7a1.chunk.css.map",
-    "static/js/2.4161ff66.chunk.js.LICENSE.txt": "/pradeep-marasini-react-portfolio/static/js/2.4161ff66.chunk.js.LICENSE.txt",
+    "static/js/2.419a231e.chunk.js.LICENSE.txt": "/pradeep-marasini-react-portfolio/static/js/2.419a231e.chunk.js.LICENSE.txt",
     "static/media/binOut.png": "/pradeep-marasini-react-portfolio/static/media/binOut.5cf3ca94.png",
     "static/media/employeeDirectory.png": "/pradeep-marasini-react-portfolio/static/media/employeeDirectory.8d4dc596.png",
     "static/media/musicApp.png": "/pradeep-marasini-react-portfolio/static/media/musicApp.0a60090c.png",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9fa0fd76.js",
-    "static/js/2.4161ff66.chunk.js",
+    "static/js/2.419a231e.chunk.js",
     "static/css/main.935cc7a1.chunk.css",
-    "static/js/main.f15baab4.chunk.js"
+    "static/js/main.0e97b0c7.chunk.js"
   ]
 }
