@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "//pradeep-marasini-react-portfolio/portfolio/static/css/main.935cc7a1.chunk.css",
-    "main.js": "//pradeep-marasini-react-portfolio/portfolio/static/js/main.355a5197.chunk.js",
-    "main.js.map": "//pradeep-marasini-react-portfolio/portfolio/static/js/main.355a5197.chunk.js.map",
-    "runtime-main.js": "//pradeep-marasini-react-portfolio/portfolio/static/js/runtime-main.dd4a0c67.js",
-    "runtime-main.js.map": "//pradeep-marasini-react-portfolio/portfolio/static/js/runtime-main.dd4a0c67.js.map",
-    "static/js/2.4161ff66.chunk.js": "//pradeep-marasini-react-portfolio/portfolio/static/js/2.4161ff66.chunk.js",
-    "static/js/2.4161ff66.chunk.js.map": "//pradeep-marasini-react-portfolio/portfolio/static/js/2.4161ff66.chunk.js.map",
-    "index.html": "//pradeep-marasini-react-portfolio/portfolio/index.html",
-    "precache-manifest.820f3e5fff478a7db313ab7c549a9128.js": "//pradeep-marasini-react-portfolio/portfolio/precache-manifest.820f3e5fff478a7db313ab7c549a9128.js",
-    "service-worker.js": "//pradeep-marasini-react-portfolio/portfolio/service-worker.js",
-    "static/css/main.935cc7a1.chunk.css.map": "//pradeep-marasini-react-portfolio/portfolio/static/css/main.935cc7a1.chunk.css.map",
-    "static/js/2.4161ff66.chunk.js.LICENSE.txt": "//pradeep-marasini-react-portfolio/portfolio/static/js/2.4161ff66.chunk.js.LICENSE.txt",
-    "static/media/binOut.png": "//pradeep-marasini-react-portfolio/portfolio/static/media/binOut.5cf3ca94.png",
-    "static/media/employeeDirectory.png": "//pradeep-marasini-react-portfolio/portfolio/static/media/employeeDirectory.8d4dc596.png",
-    "static/media/musicApp.png": "//pradeep-marasini-react-portfolio/portfolio/static/media/musicApp.0a60090c.png",
-    "static/media/pradeepPhoto.jpg": "//pradeep-marasini-react-portfolio/portfolio/static/media/pradeepPhoto.b878d865.jpg",
-    "static/media/reactPortfolio.png": "//pradeep-marasini-react-portfolio/portfolio/static/media/reactPortfolio.4b269034.png",
-    "static/media/weatherDashboard.png": "//pradeep-marasini-react-portfolio/portfolio/static/media/weatherDashboard.900a2972.png"
+    "main.css": "/pradeep-marasini-react-portfolio/static/css/main.935cc7a1.chunk.css",
+    "main.js": "/pradeep-marasini-react-portfolio/static/js/main.2fcac8c9.chunk.js",
+    "main.js.map": "/pradeep-marasini-react-portfolio/static/js/main.2fcac8c9.chunk.js.map",
+    "runtime-main.js": "/pradeep-marasini-react-portfolio/static/js/runtime-main.9fa0fd76.js",
+    "runtime-main.js.map": "/pradeep-marasini-react-portfolio/static/js/runtime-main.9fa0fd76.js.map",
+    "static/js/2.419a231e.chunk.js": "/pradeep-marasini-react-portfolio/static/js/2.419a231e.chunk.js",
+    "static/js/2.419a231e.chunk.js.map": "/pradeep-marasini-react-portfolio/static/js/2.419a231e.chunk.js.map",
+    "index.html": "/pradeep-marasini-react-portfolio/index.html",
+    "precache-manifest.159c52976c49413a0d55b29267ad866f.js": "/pradeep-marasini-react-portfolio/precache-manifest.159c52976c49413a0d55b29267ad866f.js",
+    "service-worker.js": "/pradeep-marasini-react-portfolio/service-worker.js",
+    "static/css/main.935cc7a1.chunk.css.map": "/pradeep-marasini-react-portfolio/static/css/main.935cc7a1.chunk.css.map",
+    "static/js/2.419a231e.chunk.js.LICENSE.txt": "/pradeep-marasini-react-portfolio/static/js/2.419a231e.chunk.js.LICENSE.txt",
+    "static/media/binOut.png": "/pradeep-marasini-react-portfolio/static/media/binOut.5cf3ca94.png",
+    "static/media/employeeDirectory.png": "/pradeep-marasini-react-portfolio/static/media/employeeDirectory.8d4dc596.png",
+    "static/media/musicApp.png": "/pradeep-marasini-react-portfolio/static/media/musicApp.0a60090c.png",
+    "static/media/pradeepPhoto.jpg": "/pradeep-marasini-react-portfolio/static/media/pradeepPhoto.b878d865.jpg",
+    "static/media/reactPortfolio.png": "/pradeep-marasini-react-portfolio/static/media/reactPortfolio.4b269034.png",
+    "static/media/weatherDashboard.png": "/pradeep-marasini-react-portfolio/static/media/weatherDashboard.900a2972.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd4a0c67.js",
-    "static/js/2.4161ff66.chunk.js",
+    "static/js/runtime-main.9fa0fd76.js",
+    "static/js/2.419a231e.chunk.js",
     "static/css/main.935cc7a1.chunk.css",
-    "static/js/main.355a5197.chunk.js"
+    "static/js/main.2fcac8c9.chunk.js"
   ]
 }
