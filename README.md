@@ -1,81 +1,68 @@
-# Pradeep Marasini React Portfolio
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
+In the project directory, you can run:
 
-## Description
+### `yarn start`
 
-* The portfolio is build using React and hooks.
-* Portfolio is featuring 6 total projects
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-It consist of:-
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-* A `Header` component that appears on multiple pages
+### `yarn test`
 
-* A single `Project` component that will be used multiple times on a single page 
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-* Navigation with React Router, dynamic rendering, or another third part router
+### `yarn build`
 
-* A `Footer` component that appears on multiple pages
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Instructions
+### `yarn eject`
 
-* [Updated Portfolio](#updated-portfolio)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-* [Design](#design)
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-* [React](#react)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-* [Updated LinkedIn Profile](#updated-linkedin-profile)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### Updated Portfolio
+## Learn More
 
-The sit  have :
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-* name
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-* Links to  GitHub profile & LinkedIn page as well as  email address and phone number
+### Code Splitting
 
-* A link to a PDF of resume with projects
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-* A list of projects. For each project,  have the following:
+### Analyzing the Bundle Size
 
-  * Project title
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-  * Link to the deployed version
+### Making a Progressive Web App
 
-  * Link to the GitHub repository
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-  * GIF or screenshot of the deployed application
+### Advanced Configuration
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-#### Design
+### Deployment
 
-The site is "polished."
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-* Mobile-first design
+### `yarn build` fails to minify
 
-![Picures](portfolio/src/Components/Images/reactPortfolio.png)
-
-![Responsive](portfolio/src/Components/Images/rpMobile.png)
-
-### React
-
-This portfolio is created using React.
-
-Portfolio includes the following:
-
-* A `Header` component that appears on multiple pages
-
-* A single `Project` component that will be used multiple times on a single page 
-
-* Navigation with React Router, dynamic rendering, or another third part router
-
-* A `Footer` component that appears on multiple pages
-
-
-### Updated LinkedIn Profile 
-
-
-
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
