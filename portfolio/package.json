@@ -14,7 +14,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3"
   },
-  "homepage": "http://marasinipradeep.github.io/pradeep-marasini-react-portfolio",
+  "homepage": "https://marasinipradeep.github.io/pradeep-marasini-react-portfolio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
