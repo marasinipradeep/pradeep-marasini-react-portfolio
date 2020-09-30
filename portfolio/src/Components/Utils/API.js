@@ -4,6 +4,7 @@ import binOut from "../Images/binOut.png";
 import musicApp from "../Images/musicApp.png";
 import weatherDashboard from "../Images/weatherDashboard.png";
 import blb from "../Images/blb.jpeg";
+import employeeDirectory from "../Images/employeeDirectory.png"
 
 export default [
     {
@@ -15,7 +16,7 @@ export default [
             date:"September 27 2020",
             projectName: "REACT PORTFOLIO",
             description:
-                "This is Simple portfolio which is developed using React,React router, React Hooks and Material UI.",
+                "This is a portfolio which is developed using React,React router, React Hooks and Material UI.It is fully mobile responsive and fits on small screen.",
             githubLink: "https://github.com/marasinipradeep/pradeep-marasini-react-portfolio",
             liveLink: "https://binout.herokuapp.com/",
             demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
@@ -45,7 +46,38 @@ export default [
         },
         fields: {
 
-            date:"September 15 2020",
+            date:"September 10 2020",
+            projectName: "Employee Directory",
+            description:
+                "This is an app which allows an users to view entire employee directory at once so that they can  have quick access to their information. This app List all the employees and renders on table view. It also allows to filter an employee by input, filter an employee by  gender only and sort by Name in an ascending or descending order",
+            githubLink: "https://github.com/marasinipradeep/employee-directory",
+            liveLink: "https://marasinipradeep.github.io/employee-directory/",
+
+            technoligiesUsed: [
+                "React",
+                "React Components",
+                "React class based state",
+                "Bootstrap"
+            ],
+            images: [
+                {
+                    fields: {
+                        file: {
+                            url: employeeDirectory
+                        }
+                    }
+                },
+            ]
+        }
+    },
+
+    {
+        sys: {
+            id: "3"
+        },
+        fields: {
+
+            date:"August 15 2020",
             projectName: "BIN OUT",
             description:
                 "Bin-out is an application which allows users to submit a request for their bins to be taken out for collection when they are unable to.",
@@ -73,7 +105,7 @@ export default [
 
     {
         sys: {
-            id: "3"
+            id: "4"
         },
         fields: {
 
@@ -105,7 +137,7 @@ export default [
 
     {
         sys: {
-            id: "4"
+            id: "5"
         },
         fields: {
 
@@ -137,7 +169,7 @@ export default [
 
     {
         sys: {
-            id: "5"
+            id: "6"
         },
         fields: {
 

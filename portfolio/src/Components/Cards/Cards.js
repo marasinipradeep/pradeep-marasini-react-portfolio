@@ -14,8 +14,9 @@ const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: "80%",
         margin: 'auto',
-        backgroundColor: theme.palette.primary.light,
-        color: theme.palette.primary.contrastText,
+        backgroundColor: theme.palette.secondary.light,
+        color: theme.palette.secondary.contrastText,
+        marginBottom:"50px"
     },
     media: {
         height: 0,
@@ -76,7 +77,7 @@ export default function Cards() {
                                     <CardHeader 
                                         avatar={<Avatar aria-label="recipe"
                                             className={classes.avatar}>{project.fields.projectName.charAt(0)}</Avatar>}
-                                        action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
+                                        action={<IconButton aria-label="settings"></IconButton>}
                                         titleTypographyProps={{ variant: "h4" }}
                                         title={project.fields.projectName}
                                         subheaderTypographyProps={{ variant: "subheader" }}
@@ -93,7 +94,9 @@ export default function Cards() {
                                         </div>
                                     ))}
                                     <CardContent className={classes.cardHeader}>
-                                        <Typography variant="h6" color="textPrimary" component="p">
+                                        <Typography variant="h4" color="primary"> Description:</Typography>
+                                        <Typography variant="h5" color="textPrimary" component="p">
+                                          
                                             {project.fields.description}
                                         </Typography>
                                     </CardContent>
@@ -117,10 +120,10 @@ export default function Cards() {
                                     </CardActions>
                                     <Collapse in={expanded} timeout="auto" unmountOnExit>
                                         <CardContent>
-                                            <Typography paragraph variant="h6">Technologies Used:</Typography>
+                                            <Typography paragraph variant="h5">Technologies Used:</Typography>
                                             {project.fields.technoligiesUsed.map(technoligiesUsed => (
                                                 <div>
-                                                    <Typography paragraph>
+                                                    <Typography paragraph variant="h6">
                                                         {technoligiesUsed}
                                                     </Typography>
                                                 </div>
