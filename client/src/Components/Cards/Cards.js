@@ -14,13 +14,14 @@ const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: "80%",
         margin: 'auto',
-        backgroundColor: theme.palette.secondary.light,
-        color: theme.palette.secondary.contrastText,
+        backgroundColor: "#e2c779",
+        color: "black",
         marginBottom:"50px"
     },
     media: {
         height: 0,
         paddingTop: '56.25%', // 16:9
+       
     },
     expand: {
         transform: 'rotate(0deg)',
@@ -39,10 +40,13 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "35px"
     },
     cardHeader:{
-        backgroundColor:"lightgrey"
+        backgroundColor:"#faf0db"
     },
     cardFooter:{
-        backgroundColor:blue[300]
+        backgroundColor:"#f3e5ab"
+    },
+    description:{
+        color:"#112222"
     }
 }));
 
@@ -95,8 +99,7 @@ export default function Cards() {
                                     ))}
                                     <CardContent className={classes.cardHeader}>
                                         <Typography variant="h4" color="primary"> Description:</Typography>
-                                        <Typography variant="h5" color="textPrimary" component="p">
-                                          
+                                        <Typography variant="h5" className={classes.description} component="p">
                                             {project.fields.description}
                                         </Typography>
                                     </CardContent>

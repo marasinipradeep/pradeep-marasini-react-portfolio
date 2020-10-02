@@ -56,9 +56,9 @@ The site is "polished."
 
 * Mobile-first design
 
-![Picures](src/Components/Images/reactPortfolio.png)
+![Picures](client/src/Components/Images/reactPortfolio.png)
 
-![Responsive](src/Components/Images/rpMobile.png)
+![Responsive](client/src/Components/Images/rpMobile.png)
 
 ### React
 

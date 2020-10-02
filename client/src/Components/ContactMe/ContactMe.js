@@ -10,11 +10,11 @@ const useStyles = makeStyles((theme) => ({
     },
     paper: {
         padding: theme.spacing(2),
-        margin: '20px',
+        margin: '30px',
         maxWidth: "100%",
-        backgroundColor: "rgba(8, 119, 13, 0.623)",
+        backgroundColor: "#f8deb8",
         textAlign: "center",
-        borderRadius: "50px"
+        borderRadius: "40px"
     }
 }));
 

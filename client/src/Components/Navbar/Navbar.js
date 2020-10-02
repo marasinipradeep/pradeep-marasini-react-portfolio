@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     
   },
   appBar:{
-    backgroundColor:"rgb(219, 70, 70)"
+    backgroundColor:"#cfa46b"
   }
   
 }));
@@ -69,11 +69,11 @@ export default function Navbar(props) {
       <CssBaseline />
       <AppBar className={classes.appBar}>
         <Toolbar >
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={()=>history.push("/")}>
+          <IconButton edge="start" className={classes.menuButton} aria-label="menu" onClick={()=>history.push("/")}>
            <Home />HOME
           </IconButton>
 
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={()=>history.push("/projects")}>
+          <IconButton edge="start" className={classes.menuButton}  aria-label="menu" onClick={()=>history.push("/projects")}>
          <Description />PROJECTS
           </IconButton>
         </Toolbar>

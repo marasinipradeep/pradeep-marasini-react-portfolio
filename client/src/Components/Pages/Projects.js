@@ -3,13 +3,20 @@ import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
 import Cards from "../Cards/Cards"
 import {makeStyles, useTheme} from "@material-ui/core"
+import { Transform } from '@material-ui/icons'
 
 const useStyles= makeStyles((useTheme)=>({
 
+    root:{
+        backgroundColor:"#cfb095"
+
+    },
+
     h1:{
-        margin:"50px",
+        margin:"30px",
         textAlign:"center",
-        fontSize:"40px"
+        fontSize:"50px",
+        color:"white"
         
     }
 
@@ -18,9 +25,9 @@ const useStyles= makeStyles((useTheme)=>({
 export default function Projects() {
     const classes = useStyles();
     return (
-        <div>
+        <div className={classes.root}>
         <Navbar/>
-        <h1 className={classes.h1}>Recent Projects</h1>
+        <h1 className={classes.h1}>RECENT PROJECTS</h1>
         <Cards/>
         <Footer />
         </div>
