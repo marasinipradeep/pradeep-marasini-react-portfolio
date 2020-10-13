@@ -35,17 +35,21 @@ export default function UsedTechnologies() {
     const classes = useStyles();
 
     //Setting state
-    const [title, setTitle] = useState("Used Technologies")
+    const [title, setTitle] = useState("USED TECHNOLIGIES")
     const [frontEndTechnologies, setfrontEndTechnologies] = useState(
         [
             "HTML",
             "CSS", 
             "JAVASCRIPT", 
             "JQUERY",
+            "C/C++",
             "HANDLEBAR",
             "JSON",
             "JSX",
-            "REACT", "BOOTSTRAP", "MATERIAL UI",
+            "REACT", 
+            "BOOTSTRAP",
+            "MATERIAL UI",
+            "QT-GUI",
 
         ])
     const [backEndTechnologies, setbackEndTechnologies] = useState(
@@ -79,7 +83,7 @@ export default function UsedTechnologies() {
 
         <div className={classes.root}>
             <Paper className={classes.paper}>
-                <Typography variant="h2" className={classes.aboutMeTitle} gutterBottom >{title}</Typography>
+                <Typography variant="h4" className={classes.aboutMeTitle} gutterBottom >{title}</Typography>
                 <hr />
                 <Grid item xs container spacing={3}>
                     <Grid item xs={12} md={3} className={classes.aboutMe}>
