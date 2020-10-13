@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
 import AboutMe from "../AboutMe/AboutMe"
 import ContactMe from "../ContactMe/ContactMe"
+import UsedTechnologies from "../UsedTechnologies/UsedTechnologies"
 
 import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-ui/core';
 
@@ -19,6 +20,8 @@ export default function Home() {
         <div className={classes.root}>
            <Navbar/>
            <AboutMe/>
+           <UsedTechnologies/>
+           
            <ContactMe/>
            <Footer />
         </div>

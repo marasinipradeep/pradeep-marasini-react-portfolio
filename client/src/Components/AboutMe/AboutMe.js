@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: "auto",
         backgroundColor: "#f0ead2",
         color: "#033500",
-        borderRadius:"40px"
+        borderRadius: "40px"
     },
 
     img: {
@@ -50,12 +50,14 @@ export default function AboutMe() {
     const [position, setPosition] = useState("Full Stack Web Developer")
     const [aboutMe, setAboutMe] = useState("Full Stack Web Developer with a background in electronics and communication engineering, utilising experience in banking / payment application, embedded system and agile methodology. Awarded as “Best IT Supporter” and is a strong communicator to work effectively with end-users and the team. Motivated to implement innovative technology on real world problems, to make life easier. Demonstrated excellent people-oriented service and know how to handle difficult requests while prioritising work.")
 
+    
+
     return (
 
         <div className={classes.root}>
             <Paper className={classes.paper}>
                 <Typography variant="h2" className={classes.aboutMeTitle} gutterBottom >{title}</Typography>
-                <hr/>
+                <hr />
                 <Grid item xs container spacing={3}>
                     <Grid item xs={12} md={3} className={classes.aboutMe}>
                         <img className={classes.img} alt="complex" src={portfolio} />
@@ -68,7 +70,6 @@ export default function AboutMe() {
                         <Container>
                             <Box my={4} >
                                 <Typography variant="h5"  >{aboutMe}</Typography>
-
                             </Box>
                         </Container>
                     </Grid>
