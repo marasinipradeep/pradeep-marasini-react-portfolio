@@ -11,13 +11,16 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     bottom: theme.spacing(3),
     right: theme.spacing(3),
+    flexGrow: 1,
+       
   },
   menuButton: {
     marginRight: theme.spacing(5),
+    color:"white"
     
   },
   appBar:{
-    backgroundColor:"#cfa46b"
+    backgroundColor:"#df00ff"
   }
   
 }));

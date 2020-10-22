@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
 import AboutMe from "../AboutMe/AboutMe"
@@ -7,23 +8,35 @@ import UsedTechnologies from "../UsedTechnologies/UsedTechnologies"
 
 import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-ui/core';
 
+import Hero from "../Hero/Hero"
+import Banner from "../Banner/Banner"
+
+//Import profile image
+import portfolio from "../Images/pradeepPhoto.jpg"
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        backgroundColor:"#f3dfd4"
+        backgroundColor: "#f3dfd4"
     },
 }))
 export default function Home() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-           <Navbar/>
-           <AboutMe/>
-           <UsedTechnologies/>
-           
-           <ContactMe/>
-           <Footer />
+            <Navbar />
+            <Hero>     
+
+                    <Banner title="Pradeep Marasini" position="React Developer" subtitle="Full Stack Web Developer with a background in electronics and communication engineering, utilising experience in banking / payment application, embedded system and agile methodology. Awarded as “Best IT Supporter” and is a strong communicator to work effectively with end-users and the team. Motivated to implement innovative technology on real world problems, to make life easier. Demonstrated excellent people-oriented service and know how to handle difficult requests while prioritising work.">
+                    <img className={classes.img} alt="complex" src={portfolio} />
+
+                    </Banner>
+            </Hero>
+            {/* <AboutMe /> */}
+            <UsedTechnologies />
+
+            <ContactMe />
+            <Footer />
         </div>
     )
 }
