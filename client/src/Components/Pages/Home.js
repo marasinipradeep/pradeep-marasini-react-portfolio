@@ -11,8 +11,9 @@ import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-u
 import Hero from "../Hero/Hero"
 import Banner from "../Banner/Banner"
 
-//Import profile image
-import portfolio from "../Images/pradeepPhoto.jpg"
+import Technologies from "../Technologies/Technologies"
+
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -44,7 +45,8 @@ export default function Home() {
                     </Banner>
             </Hero>
             {/* <AboutMe /> */}
-            <UsedTechnologies />
+            <Technologies/>
+            {/* <UsedTechnologies /> */}
 
             <ContactMe />
             <Footer />
