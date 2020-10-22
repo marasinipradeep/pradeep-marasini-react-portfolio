@@ -1,6 +1,9 @@
 import React from 'react';
 import { Typography, Link, makeStyles, Paper, Grid } from '@material-ui/core';
 import { Assignment, Email, Phone, Home } from '@material-ui/icons';
+import axios from "axios"
+
+import filedownload from "react-file-download"
 
 
 //Using custom styles
@@ -17,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "40px"
     }
 }));
-
 export default function ContactMe() {
 
     //Importing Hooks
@@ -29,7 +31,8 @@ export default function ContactMe() {
                 <Grid item xs container spacing={3}>
                     <Grid item xs={12} md={12}>
                         <Link component="button" variant="h5" >
-                            <a href="https://drive.google.com/file/d/1eFrO_qEzWZDXEq5cyVtMUSyOKI-PjZhF/view?usp=sharing" target="_blank">DownLoad CV </a><Assignment /></Link>
+                            <a href={process.env.PUBLIC_URL + "/pradeep_marasini_resume.pdf"} download >DownLoad CV </a><Assignment /></Link>
+                           
                     </Grid>
 
                     <Grid item xs={12} md={12}>

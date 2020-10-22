@@ -35,7 +35,7 @@ export default function UsedTechnologies() {
     const classes = useStyles();
 
     //Setting state
-    const [title, setTitle] = useState("USED TECHNOLIGIES")
+    const [title, setTitle] = useState("Technical Proficiencies")
     const [frontEndTechnologies, setfrontEndTechnologies] = useState(
         [
             "HTML",
