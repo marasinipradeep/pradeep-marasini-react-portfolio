@@ -30,7 +30,7 @@ export default function ContactMe() {
                 <Grid item xs container spacing={3}>
                     <Grid item xs={12} md={12}>
                         <Link component="button" variant="h5" >
-                            <a href={process.env.PUBLIC_URL + "/pradeep_marasini_resume.pdf"} download >DownLoad CV </a><Assignment /></Link>
+                            <a href={process.env.PUBLIC_URL + "/pradeep_marasini_resume.pdf"} download >Download CV </a><Assignment /></Link>
                            
                     </Grid>
 
