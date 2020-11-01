@@ -4,50 +4,87 @@ import binOut from "../Images/binOut.png";
 import musicApp from "../Images/musicApp.png";
 import weatherDashboard from "../Images/weatherDashboard.png";
 import blb from "../Images/blb.jpeg";
-import employeeDirectory from "../Images/employeeDirectory.png"
+import employeeDirectory from "../Images/employeeDirectory.png";
+import goemployee from "../Images/goemployee.png"
+
 
 export default [
     {
+
         sys: {
             id: "1"
         },
         fields: {
-
-            date:"September 27 2020",
-            projectName: "REACT PORTFOLIO",
+            date: "October 20 2020",
+            projectName: "Go Employee",
             description:
-                "This is a portfolio which is developed using React,React router, React Hooks and Material UI.It is fully mobile responsive and fits on small screen.",
-            githubLink: "https://github.com/marasinipradeep/pradeep-marasini-react-portfolio",
-            liveLink: "https://binout.herokuapp.com/",
-            demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
+                "Go Employee helps to establish a connection between industry owner and job seeker.It only allows to find industry workers from Farm, Restaurant and Cleaning.This application allows to find employees on fast track.",
+            githubLink: "https://github.com/marasinipradeep/Go-Employee",
+            liveLink: "https://goemployees.herokuapp.com/",
+            demoLink: "https://www.youtube.com/watch?v=BXcqKEGlIlA&feature=youtu.be&ab_channel=PradeepMarasini",
 
             technoligiesUsed: [
                 "React",
                 "React Hooks",
                 "context API",
                 "Reducer",
-                "Material UI"
+                "Material UI",
+                "Io.socket",
+                "JWT AUthentication",
+                "Multer"
             ],
             images: [
                 {
                     fields: {
                         file: {
-                            url: reactPortfolio
+                            url: goemployee
                         }
                     }
                 },
             ]
         }
     },
+{
+    sys: {
+        id: "2"
+    },
+    fields: {
+
+        date: "September 27 2020",
+        projectName: "REACT PORTFOLIO",
+        description:
+            "This is a portfolio which is developed using React,React router, React Hooks and Material UI.It is fully mobile responsive and fits on small screen.",
+        githubLink: "https://github.com/marasinipradeep/pradeep-marasini-react-portfolio",
+        liveLink: "https://binout.herokuapp.com/",
+        demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
+
+        technoligiesUsed: [
+            "React",
+            "React Hooks",
+            "context API",
+            "Reducer",
+            "Material UI"
+        ],
+        images: [
+            {
+                fields: {
+                    file: {
+                        url: reactPortfolio
+                    }
+                }
+            },
+        ]
+    }
+    },
 
     {
         sys: {
-            id: "2"
+            id: "3"
         },
         fields: {
 
-            date:"September 10 2020",
-            projectName: "Employee Directory",
+            date: "September 10 2020",
+            projectName: "EMPLOYEE DIRECTORY",
             description:
                 "This is an app which allows an users to view entire employee directory at once so that they can  have quick access to their information. This app List all the employees and renders on table view. It also allows to filter an employee by input, filter an employee by  gender only and sort by Name in an ascending or descending order",
             githubLink: "https://github.com/marasinipradeep/employee-directory",
@@ -73,11 +110,11 @@ export default [
 
     {
         sys: {
-            id: "3"
+            id: "4"
         },
         fields: {
 
-            date:"August 15 2020",
+            date: "August 15 2020",
             projectName: "BIN OUT",
             description:
                 "Bin-out is an application which allows users to submit a request for their bins to be taken out for collection when they are unable to.",
@@ -105,11 +142,11 @@ export default [
 
     {
         sys: {
-            id: "4"
+            id: "5"
         },
         fields: {
 
-            date:"July 10 2020",
+            date: "July 10 2020",
             projectName: "MUSIC APP",
             description:
                 "Music app is a music application that plays a song based upon responses to questions.",
@@ -137,11 +174,11 @@ export default [
 
     {
         sys: {
-            id: "5"
+            id: "6"
         },
         fields: {
 
-            date:"June 01 2020",
+            date: "June 01 2020",
             projectName: "WEATHER-DASHBOARD",
             description:
                 "This is a weather application's. It is using third-party APIs to access weather data and weather dashboard functionality is build by dynamically updated HTML, CSS, JAVASCRIPT and JQUERY.",
@@ -169,16 +206,16 @@ export default [
 
     {
         sys: {
-            id: "6"
+            id: "7"
         },
         fields: {
 
-            date:"June 01 2016",
+            date: "June 01 2016",
             projectName: "BRANCHLESS BANKING",
             description:
                 "Branchless Banking enables a number of banking partners to offer their product and services to far flung districts of Nepal where traditional bank branches are not established.",
-                githubLink:"https://citytech.global/",
-                liveLink: "https://citytech.global/",
+            githubLink: "https://citytech.global/",
+            liveLink: "https://citytech.global/",
 
             technoligiesUsed: [
                 "C/C++",
@@ -200,5 +237,5 @@ export default [
     },
 
 
-    
+
 ];
