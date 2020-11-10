@@ -40,43 +40,43 @@ export default function UsedTechnologies() {
         [
             "HTML",
             "CSS", 
-            "JAVASCRIPT", 
-            "JQUERY",
+            "JavaScript", 
+            "jQuery",
             "C/C++",
-            "HANDLEBAR",
+            "Handlebars JS",
             "JSON",
             "JSX",
-            "REACT", 
-            "BOOTSTRAP",
-            "MATERIAL UI",
-            "QT-GUI",
+            "React JS", 
+            "Bootstrap",
+            "Material UI",
+            "Qt-GUI",
 
         ])
     const [backEndTechnologies, setbackEndTechnologies] = useState(
         [
-            "NODEJS",
-            "EXPRESS",
-            "Libraries: bcryptjs, jsonwebtoken, multer, passport-local, socket.io"
+            "Node JS",
+            "Express JS",
+            "Libraries: Bcryptjs, JSON webtoken, Multer, Passport-local, socket.io"
         ])
 
     const [databaseTechnologies, setdatabaseTechnologies] = useState(
         [
-            "MYSQL",
-            "MONGODB",
-            "SQLLITE",
-            "POSTGRESQL",
-            "ORM: SEQUELIZE",
-            "ORM: MONGOOSE",
+            "MySQL",
+            "MongoDB",
+            "Sqllite",
+            "PostgreSQL",
+            "ORM: Sequelize",
+            "ORM: Mongoose",
         ])
 
     const [testingTechnologies, settestingTechnologies] = useState(
         [
-            "JEST",
-            "BITBUCKET",
-            "JIRA",
-            "GITHUB",
-            "GITLAB",
-            "HEROKU"
+            "Jest",
+            "Bitbucket",
+            "Jira",
+            "Github",
+            "Gitlab",
+            "Heroku"
         ])
 
     return (
