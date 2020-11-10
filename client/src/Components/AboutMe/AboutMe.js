@@ -4,6 +4,7 @@ import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-u
 //Import profile image
 import portfolio from "../Images/pradeepPhoto.jpg"
 
+
 //Using custom css
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -56,6 +57,7 @@ export default function AboutMe() {
 
         <div className={classes.root}>
             <Paper className={classes.paper}>
+          
                 <Typography variant="h2" className={classes.aboutMeTitle} gutterBottom >{title}</Typography>
                 <hr />
                 <Grid item xs container spacing={3}>

@@ -6,6 +6,9 @@ import {KeyboardArrowUp,Home,Description} from '@material-ui/icons';
 import { Link,useHistory } from 'react-router-dom';
 
 
+
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     position: 'fixed',
@@ -63,13 +66,14 @@ ScrollTop.propTypes = {
   window: PropTypes.func,
 };
 
-export default function Navbar(props) {
+ export default function Navbar(props) {
   const classes = useStyles();
   //useHistory hook let us navigate through the browser
   let history = useHistory();
   return (
     <React.Fragment>
       <CssBaseline />
+     
       <AppBar className={classes.appBar}>
         <Toolbar >
           <IconButton edge="start" className={classes.menuButton} aria-label="menu" onClick={()=>history.push("/")}>
@@ -89,4 +93,5 @@ export default function Navbar(props) {
       </ScrollTop>
     </React.Fragment>
   );
+
 }
