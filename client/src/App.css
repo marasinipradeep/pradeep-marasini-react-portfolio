@@ -97,7 +97,7 @@ li .link:hover{
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
-  text-align: left;
+  text-align: center;
   top:1em;
 }
 .about{
@@ -106,7 +106,8 @@ li .link:hover{
 }
 .about-content{
   position: relative;
-  left:15em;
+  left:8em;
+  right: 10em;
 }
 .about-content h1{
   font-family: 'Montserrat', sans-serif;
@@ -117,6 +118,12 @@ li .link:hover{
   font-size: 1.3em;
   text-align: left;
   width: 40em;
+}
+
+.technology{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5em;
+  text-align: center;
 }
 .about img{
 margin-left: 15em;
@@ -155,7 +162,7 @@ height:25em;
   text-align: left;
 }
 .contact h1{
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 5em;
   text-align: left;
 }
@@ -275,7 +282,6 @@ height: 45em;
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-
 body{
     font-size: 10px;
   }
@@ -294,7 +300,8 @@ nav{
   top:1em;
   left:1em;
 }
-.about{position: relative;
+.about{
+  position: relative;
       display: flex;
       top:-10em;
 }
@@ -355,8 +362,6 @@ height: 30em;
 @media only screen  and (min-width : 1824px) {
 /* Styles */
 
-
-
 body{
     font-size: 20px;
   }
@@ -364,7 +369,6 @@ body{
     font-size: 3em;
     margin-right: 25em;
   }
-
 
   nav{
   left:60em;
