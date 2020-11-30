@@ -4,7 +4,6 @@ import Navbar from "../Components/Navbar/Navbar"
 import Footer from "../Components/Footer/Footer"
 import AboutMe from "../Components/AboutMe/AboutMe"
 import ContactMe from "../Components/ContactMe/ContactMe"
-import UsedTechnologies from "../Components/UsedTechnologies/UsedTechnologies"
 import Header from '../Components/Header/Header'
 
 import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-ui/core';
