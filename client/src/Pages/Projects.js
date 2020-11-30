@@ -1,9 +1,8 @@
 import React from 'react'
-import Navbar from "../Navbar/Navbar"
-import Footer from "../Footer/Footer"
-import Cards from "../Cards/Cards"
+import Navbar from "../Components/Navbar/Navbar"
+import Footer from "../Components/Footer/Footer"
+import Cards from "../Components/Cards/Cards"
 import {makeStyles, useTheme} from "@material-ui/core"
-import { Transform } from '@material-ui/icons'
 
 const useStyles= makeStyles((useTheme)=>({
 

@@ -5,8 +5,8 @@ import {ProjectsProvider} from "./Components/Utils/ProjectsContext"
 
 import './App.css';
 
-import Home from "./Components/Pages/Home"
-import Projects from "./Components/Pages/Projects"
+import Home from "./Pages/Home"
+import Projects from "./Pages/Projects"
 
 function App() {
   return (
