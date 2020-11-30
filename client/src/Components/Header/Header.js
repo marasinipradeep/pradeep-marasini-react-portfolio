@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {Fade,Flip,Rotate,Zoom,Bounce,Slide,Roll,LightSpeed}  from 'react-reveal';
-//import data from '../yourdata'
 import ParticlesBg from "particles-bg";
 
 
@@ -45,11 +44,8 @@ function Header() {
                             <a href={process.env.PUBLIC_URL + "/pradeep_marasini_resume.pdf"} download >Download CV </a>
                         </button>
                     </Zoom>
-                </p>
-                           
-                           
+                </p>     
             </Fade>
-           
         </div>
         );
     

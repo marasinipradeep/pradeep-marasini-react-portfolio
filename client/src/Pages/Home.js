@@ -16,7 +16,7 @@ import Technologies from "../Components/Technologies/Technologies"
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-       // backgroundColor: "#f3dfd4"
+        // backgroundColor: "#f3dfd4"
     },
     img: {
         width: 130,
@@ -35,12 +35,9 @@ export default function Home() {
     return (
         <div className={classes.root}>
             <Navbar />
-            <Header/>
-            
-             <AboutMe />
-            <Technologies/>
-            {/* <UsedTechnologies /> */}
-
+            <Header />
+            <AboutMe />
+            <Technologies />
             <ContactMe />
             <Footer />
         </div>
