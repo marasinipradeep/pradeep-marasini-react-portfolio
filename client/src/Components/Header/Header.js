@@ -31,7 +31,7 @@ function Header() {
                     </h1>
             </header> */}
             <Fade bottom>
-            <ParticlesBg type="circle" bg={true}/>
+            {/* <ParticlesBg type="circle" bg={true}/> */}
             <p className='header-title'>
             {data.headerTagline[0]}<br></br>{data.headerTagline[1]}<br></br>
             {data.headerTagline[2]}
