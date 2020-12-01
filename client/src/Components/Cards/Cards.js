@@ -14,9 +14,9 @@ const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: "80%",
         margin: 'auto',
-        
         color: "black",
-        marginBottom: "50px"
+        marginBottom: "50px",
+        textAlign:"justify"
     },
     media: {
         display: "block",

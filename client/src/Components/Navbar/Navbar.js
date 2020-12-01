@@ -19,11 +19,11 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(5),
-    color:"white"
+    color:"black"
     
   },
   appBar:{
-    backgroundColor:"#0000ff"
+    backgroundColor:"#D3D3D3"
   }
   
 }));

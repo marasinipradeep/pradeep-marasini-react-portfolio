@@ -7,7 +7,10 @@ import {makeStyles} from "@material-ui/core"
 
 const useStyles= makeStyles(()=>({
 
-    root:{ backgroundColor:"#ffffff" },
+    root:{ 
+        flexGrow:1,
+        backgroundColor:"#ffffff" 
+    },
 
     h1:{
         margin:"30px",

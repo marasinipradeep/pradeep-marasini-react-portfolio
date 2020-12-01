@@ -204,6 +204,7 @@ height:25em;
 
   body{
     font-size: 6px;
+    overflow-x: hidden;
   }
   header h1{
 font-size: 5em;  
@@ -218,18 +219,16 @@ nav{
   display: none;
 }
 .header-title{
-  font-size: 2em;
-  text-align: center;
+  font-size: 1.2em;
+  text-align: left;
   top:1em;
-  left:5em;
-  margin-bottom: 400px;
+  left:1em;
+  margin-bottom: 300px;
 }
 .about{
   position: relative;
       display: flex;
       top:-20em;
-      
-      
 }
 .about img{
   display: none
@@ -238,11 +237,17 @@ nav{
   left:2em;
 }
 .about-content p{
-  font-size: 3em;
+  font-size: 1.5em;
   text-align: left;
- width: 300;
- margin: 10px;
- margin-right: 10px;
+  text-align: justify;
+  max-width: 90vw;
+}
+
+.technology {
+  position: relative;
+  top: -120px;
+  font-size: 2.8em;
+  
 }
 
 .work{
@@ -261,27 +266,27 @@ height: 45em;
 }
 
 .contact{
-  top:15em;
+  top:3em;
   left:2em;
 }
 .contact h1{
-  font-size: 4em;
+  font-size: 1.5em;
 }
 .contact .email{
-  font-size: 3.5em;
+  font-size: 1.5em;
 }
 
 .contact li{
   display: block;
-  padding: 2em;
+  padding: 1em;
 }
 .contact li a{
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 .footer{
-  top:4em;
+  top:2em;
   padding: 1em;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 
@@ -307,6 +312,7 @@ nav{
   text-align: left;
   top:1em;
   left:1em;
+  margin-bottom: 200px;
 }
 .about{
   position: relative;

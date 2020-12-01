@@ -15,30 +15,35 @@ import Technologies from "../Components/Technologies/Technologies"
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+       
         // backgroundColor: "#f3dfd4"
     },
-    img: {
-        width: 130,
-        height: 200,
-        display: 'block',
-        maxWidth: '100%',
-        maxHeight: '100%',
-        borderRadius: "100px",
-        display: "block",
-        marginLeft: "auto",
-        marginRight: "auto",
-    },
+   
+    // img: {
+    //     width: 130,
+    //     height: 200,
+    //     display: 'block',
+    //     maxWidth: '100%',
+    //     maxHeight: '100%',
+    //     borderRadius: "100px",
+    //     display: "block",
+    //     marginLeft: "auto",
+    //     marginRight: "auto",
+    // },
 }))
 export default function Home() {
     const classes = useStyles();
     return (
-        <div className={classes.root}>
+     
+        <Grid className={classes.root} item xs container spacing={0}>
+            <Grid item xs={12} display={{ xs: 'block', md: 'block' }}>
             <Navbar />
+            </Grid>
             <Header />
             <AboutMe />
             <Technologies />
             <ContactMe />
             {/* <Footer /> */}
-        </div>
+        </Grid>
     )
 }
