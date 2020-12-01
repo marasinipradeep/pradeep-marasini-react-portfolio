@@ -7,7 +7,7 @@ import portfolio from "../Images/portfolio.JPG"
 export default function AboutMe() {
 
     //Setting state
-    const [aboutMe, setAboutMe] = useState("I am front end Web Developer experience in building, and maintaining responsive website. Proficient in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Material UI, Foundation, plus designing knowledge of icons, logo and well versed in Scrum, Agile. Certified in full stack web development from University of Adelaide, trained with  MERN stack (Mongo DB, Express Server, React JS, Node JS), PWA (Progressive Web App), testing with Jest, and familiar with JIRA, Github and Gitlab")
+    const [aboutMe, setAboutMe] = useState("I am front end web developer having experience in building, and maintaining responsive website. I am proficient in HTML5, CSS3, Javascript, jQuery, Bootstrap, Material UI, Foundation, plus I have designing knowledge of icons and logo. I am Certified in full stack web development from University of Adelaide, have trained with  MERN stack (Mongo DB, Express Server, React JS, Node JS), PWA (Progressive Web App), testing with Jest, and familiar with JIRA, Github and Gitlab. Also, experienced and versed in Scrum and Agile. ")
 
     return (
         <div className='about'>
