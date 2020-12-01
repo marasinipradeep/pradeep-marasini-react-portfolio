@@ -163,7 +163,7 @@ height:25em;
 }
 .contact h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
+  font-size: 3em;
   text-align: left;
 }
 .amazing-color{
@@ -185,6 +185,7 @@ height:25em;
 .contact li a{
   text-decoration: none;
   color:black;
+  cursor: pointer;
 }
 .footer{
   position: relative;
@@ -194,6 +195,7 @@ height:25em;
 .footer a{
   text-decoration: none;
   color:#2c59fb;
+  cursor: pointer;
 }
 
 
@@ -216,14 +218,18 @@ nav{
   display: none;
 }
 .header-title{
-  font-size: 3em;
-  text-align: left;
+  font-size: 2em;
+  text-align: center;
   top:1em;
-  left:1em;
+  left:5em;
+  margin-bottom: 400px;
 }
-.about{position: relative;
+.about{
+  position: relative;
       display: flex;
-      top:-30em;
+      top:-20em;
+      
+      
 }
 .about img{
   display: none
@@ -232,9 +238,11 @@ nav{
   left:2em;
 }
 .about-content p{
-  font-size: 3.5em;
+  font-size: 3em;
   text-align: left;
-  width: 300px;
+ width: 300;
+ margin: 10px;
+ margin-right: 10px;
 }
 
 .work{
@@ -383,6 +391,7 @@ nav li{
   font-size: 5em;
   top:1em;
   left:1em;
+  margin-bottom: 300px;
 }
 .about{position: relative;
       display: flex;
@@ -395,9 +404,12 @@ nav li{
   font-size: 3.5em;
   text-align: left;
   width: 25em;
+  max-width: 90%;
 }
 .about img{
   margin-left: 1em;
+  width: 600px;
+ border-radius: 0%
 }
 
 .work{
@@ -415,19 +427,22 @@ height: 32em;
 }
 
 .contact{
-  top:10em;
+  text-align: center;
+  top:3em;
   left:8em;
 }
 .contact h1{
-  font-size: 8em;
+  text-align: center;
+  font-size: 3em;
 }
 .contact .email{
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .contact li a{
-  font-size: 4em;
+  font-size: 3em;
   padding: 1em;
+  color: #2c59fb;
 }
 .footer{
   top:4em;

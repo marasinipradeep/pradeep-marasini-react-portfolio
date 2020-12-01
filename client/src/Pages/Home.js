@@ -38,7 +38,7 @@ export default function Home() {
             <AboutMe />
             <Technologies />
             <ContactMe />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

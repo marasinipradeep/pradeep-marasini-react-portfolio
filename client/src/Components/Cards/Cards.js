@@ -14,13 +14,15 @@ const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: "80%",
         margin: 'auto',
-        backgroundColor: "#e2c779",
+        
         color: "black",
         marginBottom: "50px"
     },
     media: {
-        height: 0,
-        paddingTop: '56.25%', // 16:9
+        display: "block",
+        margin: "auto",
+        width: "25%",
+        paddingTop: '20.25%', // 16:9
 
     },
     expand: {
@@ -40,10 +42,10 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "35px"
     },
     cardHeader: {
-        backgroundColor: "#faf0db"
+        backgroundColor: "#ffffff"
     },
     cardFooter: {
-        backgroundColor: "#f3e5ab"
+        backgroundColor: "#ffffff"
     },
     description: {
         color: "#112222"
@@ -76,7 +78,7 @@ export default function Cards() {
                     <Grid item xs container spacing={3} >
                         {state.map((project, i) => (
 
-                            <Grid item xs={12} md={12} lg={6}>
+                            <Grid item xs={12} md={12} lg={12}>
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={<Avatar aria-label="recipe"

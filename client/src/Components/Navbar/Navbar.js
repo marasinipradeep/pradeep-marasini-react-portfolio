@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     
   },
   appBar:{
-    backgroundColor:"#df00ff"
+    backgroundColor:"#0000ff"
   }
   
 }));

@@ -163,7 +163,7 @@ export default function Services() {
                         <Grid item xs container spacing={3} >
                             {state.map((project, i) => (
 
-                                <Grid item xs={6} md={4}>
+                                <Grid item xs={12} md={4}>
                                     <Card className={classes.root}>
                                         <CardHeader
                                             avatar={<Avatar aria-label="recipe"

@@ -10,7 +10,7 @@ import goemployee from "../Images/goemployee.png"
 
 export default [
     {
-       
+
 
         sys: {
             id: "1"
@@ -19,15 +19,19 @@ export default [
             date: "October 20 2020",
             projectName: "Go Employee",
             description:
-                "Go Employee helps to establish a connection between industry owner and job seeker.It only allows to find industry workers from Farm, Restaurant and Cleaning.This application allows to find employees on fast track.",
+                "This application helps to establish a connection between industry owner and job seeker. This is useful for business owner to find workers instantly in busy time. And benefits worker because they can register, add information, and put themselves online so hiring person can see, view them and get connect.",
             githubLink: "https://github.com/marasinipradeep/Go-Employee",
             liveLink: "https://goemployees.herokuapp.com/",
             demoLink: "https://www.youtube.com/watch?v=BXcqKEGlIlA&feature=youtu.be&ab_channel=PradeepMarasini",
 
             technoligiesUsed: [
+                "HTML5",
+                "CSS3",
+                "Javascript",
+                "ES6+",
                 "React",
                 "React Hooks",
-                "context API",
+                "Context API",
                 "Reducer",
                 "Material UI",
                 "Io.socket",
@@ -45,37 +49,41 @@ export default [
             ]
         }
     },
-{
-    sys: {
-        id: "2"
-    },
-    fields: {
+    {
+        sys: {
+            id: "2"
+        },
+        fields: {
 
-        date: "September 27 2020",
-        projectName: "REACT PORTFOLIO",
-        description:
-            "This is a portfolio which is developed using React,React router, React Hooks and Material UI.It is fully mobile responsive and fits on small screen.",
-        githubLink: "https://github.com/marasinipradeep/pradeep-marasini-react-portfolio",
-        liveLink: "https://binout.herokuapp.com/",
-        demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
+            date: "September 27 2020",
+            projectName: "REACT PORTFOLIO",
+            description:
+                "This is a portfolio, which is useful to present personal information, evidence of relevant skills and abilities.The website provides personal information in depth which includes personal introduction, list of proficient technologies, contact information and list of projects that have been accomplished.",
+            githubLink: "https://github.com/marasinipradeep/pradeep-marasini-react-portfolio",
+            liveLink: "https://binout.herokuapp.com/",
+            demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
 
-        technoligiesUsed: [
-            "React",
-            "React Hooks",
-            "context API",
-            "Reducer",
-            "Material UI"
-        ],
-        images: [
-            {
-                fields: {
-                    file: {
-                        url: reactPortfolio
+            technoligiesUsed: [
+                "HTML5",
+                "CSS3",
+                "Javascript",
+                "ES6+",
+                "React",
+                "React Hooks",
+                "context API",
+                "Reducer",
+                "Material UI"
+            ],
+            images: [
+                {
+                    fields: {
+                        file: {
+                            url: reactPortfolio
+                        }
                     }
-                }
-            },
-        ]
-    }
+                },
+            ]
+        }
     },
 
     {
@@ -92,6 +100,10 @@ export default [
             liveLink: "https://marasinipradeep.github.io/employee-directory/",
 
             technoligiesUsed: [
+                "HTML5",
+                "CSS3",
+                "Javascript",
+                "ES6+",
                 "React",
                 "React Components",
                 "React class based state",
@@ -118,16 +130,21 @@ export default [
             date: "August 15 2020",
             projectName: "BIN OUT",
             description:
-                "Bin-out is an application which allows users to submit a request for their bins to be taken out for collection when they are unable to.",
+                "Bin-out is an application which allows users to submit a request for their bins to be taken out for collection when they are unable to. Once a request is sent, a local employee can choose to accept and fulfil the request. This application is useful for people who are unable to put their bins out, potentially due to be- ing away from their property, having a physical condition or being elderly.",
             githubLink: "https://github.com/benorule/bin-out",
             liveLink: "https://binout.herokuapp.com/",
             demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
 
             technoligiesUsed: [
-                "Node",
-                "Express",
-                "Mysql",
-                "HandleBar"
+                "HTML5",
+                "CSS3",
+                "Javascript",
+                "Node JS",
+                "Express JS",
+                "MySQL",
+                "Sequelize",
+                "HandleBar JS",
+                "Nexmo API"
             ],
             images: [
                 {
@@ -150,15 +167,16 @@ export default [
             date: "July 10 2020",
             projectName: "MUSIC APP",
             description:
-                "Music app is a music application that plays a song based upon responses to questions.",
+                "This is a music application that plays a song based upon responses to questions.This application helps to find a perfect song and play when a person is unable to decide what song they should listen. So user are provided with series of random questions with options to choose and at the end app plays a song.",
             githubLink: "https://github.com/marasinipradeep/music-app",
             liveLink: "https://marasinipradeep.github.io/music-app/",
 
             technoligiesUsed: [
-                "HTML",
-                "CSS",
+                "HTML5",
+                "CSS3",
                 "Javascript",
-                "Jquery",
+                "jQuery",
+                "Foundation",
                 "Youtube/GIPHY APIS"
             ],
             images: [
@@ -187,10 +205,11 @@ export default [
             liveLink: "https://marasinipradeep.github.io/weather_dashboard/",
 
             technoligiesUsed: [
-                "HTML",
-                "CSS",
+                "HTML5",
+                "CSS3",
                 "Javascript",
-                "Jquery",
+                "jQuery",
+                "Bootstrap",
                 "Weather API"
             ],
             images: [
@@ -214,16 +233,22 @@ export default [
             date: "June 01 2016",
             projectName: "BRANCHLESS BANKING",
             description:
-                "Branchless Banking enables a number of banking partners to offer their product and services to far flung districts of Nepal where traditional bank branches are not established.",
+                "This application make easy for non-banking customers to be a part of the financial fabric using technology. BLB enables a number of banking partners to offer their services to remote districts of Nepal where modern bank branches are not established. This innovative solution provide features to deposit, with- draw, fund transfer and pay bills without establishment of physical branch saving huge amount.",
             githubLink: "https://citytech.global/",
             liveLink: "https://citytech.global/",
 
             technoligiesUsed: [
+                "HTML5",
+                "CSS3",
+                "Javascript",
+                "jQuery",
+                "Bootstrap",
                 "C/C++",
                 "SqlLight",
                 "Java",
-                "Postgresql",
-                ""
+                "PostgreSQL",
+                "Linux",
+                "QT"
             ],
             images: [
                 {

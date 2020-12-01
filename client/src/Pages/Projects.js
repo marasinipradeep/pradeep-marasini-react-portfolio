@@ -7,13 +7,13 @@ import {makeStyles} from "@material-ui/core"
 
 const useStyles= makeStyles(()=>({
 
-    root:{ backgroundColor:"#cfb095" },
+    root:{ backgroundColor:"#ffffff" },
 
     h1:{
         margin:"30px",
         textAlign:"center",
         fontSize:"50px",
-        color:"white"
+        color:"Black"
     }
 
 }))
@@ -25,7 +25,7 @@ export default function Projects() {
         <Navbar/>
         <h1 className={classes.h1}>RECENT PROJECTS</h1>
         <Cards/>
-        <Footer />
+        {/* <Footer /> */}
         </div>
     )
 }
