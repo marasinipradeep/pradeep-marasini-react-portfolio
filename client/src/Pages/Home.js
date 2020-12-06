@@ -8,7 +8,9 @@ import Header from '../Components/Header/Header'
 
 import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-ui/core';
 
-import Technologies from "../Components/Technologies/Technologies"
+import Technologies from "../Components/Technologies/Technologies";
+import Projects from "../Components/Projects/Projects";
+import CardSlides from "../Components/CardSlide/CardSlide"
 
 
 
@@ -42,6 +44,8 @@ export default function Home() {
             <Header />
             <AboutMe />
             <Technologies />
+            <CardSlides/>
+            {/* <Projects/> */}
             <ContactMe />
             {/* <Footer /> */}
         </Grid>

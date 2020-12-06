@@ -1,7 +1,6 @@
 import React from 'react';
 import { Email, Phone, Home } from '@material-ui/icons';
 import { Fade } from 'react-reveal';
-import { Grid } from '@material-ui/core';
 import { LinkedIn, GitHub} from '@material-ui/icons';
 
 export default function ContactMe() {

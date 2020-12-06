@@ -13,7 +13,10 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         // backgroundColor: "#e2c779",
         color: "black",
-        marginBottom: "50px"
+        marginBottom: "50px",
+        width:"55%",
+        height:"auto"
+        
     },
     media: {
         height: 0,
@@ -156,11 +159,11 @@ export default function Services() {
     return (
         <>
             {state.length ? (
-
-                <div >
+                
+                <div className="usedTechnologies">
                     <h1 className='technology'>Proficient Technologies.</h1>
                     <Fade bottom>
-                        <Grid item xs container spacing={1} >
+                        <Grid item xs container spacing={2} >
                             {state.map((project, i) => (
 
                                 <Grid item xs={12} md={4}>
