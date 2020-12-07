@@ -161,7 +161,7 @@ export default function Services() {
             {state.length ? (
                 
                 <div className="usedTechnologies">
-                    <h1 className='technology'>Proficient Technologies.</h1>
+                    <h1 className='proficientTechnologies'>Proficient Technologies.</h1>
                     <Fade bottom>
                         <Grid item xs container spacing={2} >
                             {state.map((project, i) => (

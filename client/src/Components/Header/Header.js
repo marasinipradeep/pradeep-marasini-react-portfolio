@@ -5,6 +5,7 @@ import { Grid } from '@material-ui/core';
 //Import profile image
 import portfolio from "../Images/profilePic.jpg"
 import portfolioOne from "../Images/profilePicOne.jpg"
+import portfolioTwo from "../Images/profilePicTwo.png"
 
 
 function Header() {
@@ -58,7 +59,7 @@ function Header() {
             </Grid>
            
             <Grid item xs={12} md={4}>
-                <img src={portfolioOne} alt='about imge' className="profileimage"></img>
+                <img src={portfolioTwo} alt='about imge' className="profileimage"></img>
             </Grid>
 
 

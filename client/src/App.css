@@ -132,6 +132,11 @@ li .link:hover{
   text-align: center;
   color: #ffffff;
 }
+.proficientTechnologies {
+  position: relative;
+  left:4em;
+  color: #ffffff;
+}
 .profileimage{
   margin-top: 150px;
   height: auto;
