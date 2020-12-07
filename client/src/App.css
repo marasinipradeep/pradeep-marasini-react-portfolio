@@ -2,7 +2,7 @@
 
 body{
   font-size: 16px;
-  background: white;
+  background: black;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   z-index: 1;
@@ -20,7 +20,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: black;
+  color: white;
   top:4em;
 }
 .heading-background{
@@ -47,17 +47,19 @@ margin-right: 50em;
 nav{
   position: fixed;
   left: 50em;
-  top:1em;
+  top:0;
   z-index: 100;
  
 }
 nav li{
   display: inline-block;
   cursor: pointer;
+  
 }
 nav li .link{
+  
   text-decoration: none;
-  color: black;
+  color:#ffffff;
   padding:1em;
   opacity: 0.5;
   transition: all 0.3s ease-in-out;
@@ -70,12 +72,12 @@ li .link:hover{
   opacity: 1;
 }
 .active{
-  color:black;
+  color:#ffffff;
   opacity: 1;
 }
 
 .header-title button{
-  background: black;
+  background: gray;
   border: 0px;
   padding: 1em 3em;
   transition: all 0.2s ease-out;
@@ -89,20 +91,24 @@ li .link:hover{
 }
 .header-title button a{
   font-family: 'Open Sans', sans-serif;
-  color:white;
+  color:#ffffff;
   text-decoration: none;
   font-size: 20px;
 }
 .header-title{
+  margin-top: 200px;
+  margin-left: 100px;
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   text-align: center;
   top:1em;
+  color: #ffffff;
 }
 .about{
   display: flex;
   flex-direction: row;
+  color: #ffffff;
 }
 .about-content{
   position: relative;
@@ -124,6 +130,15 @@ li .link:hover{
   font-family: 'Montserrat', sans-serif;
   font-size: 5em;
   text-align: center;
+  color: #ffffff;
+}
+.profileimage{
+  margin-top: 150px;
+  height: auto;
+ width: 500px;
+  background-size: cover;
+background-position: center;
+
 }
 .about img{
 margin-left: 15em;
@@ -165,14 +180,15 @@ height:25em;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   text-align: left;
+  color: #ffffff;
 }
 .amazing-color{
-  color:#9352ae;
+  color:#ffffff;
   opacity: 1;
 }
 
 .contact .email{
-  color:black;
+  color:#ffffff;
   font-size: 2em;
 }
 .contact li{
@@ -184,17 +200,18 @@ height:25em;
 }
 .contact li a{
   text-decoration: none;
-  color:black;
+  color:#ffffff;
   cursor: pointer;
 }
 .footer{
   position: relative;
   top:2em;
   padding: 1em;
+  color: #ffffff;
 }
 .footer a{
   text-decoration: none;
-  color:#2c59fb;
+  color:#ffffff;
   cursor: pointer;
 }
 

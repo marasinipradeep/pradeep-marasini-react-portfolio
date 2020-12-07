@@ -7,20 +7,29 @@ import portfolio from "../Images/portfolio.JPG"
 export default function AboutMe() {
 
     //Setting state
-    const [aboutMe, setAboutMe] = useState("I am front end web developer having experience in building, and maintaining responsive website. I am proficient in HTML5, CSS3, Javascript, jQuery, Bootstrap, Material UI, Foundation, plus I have designing knowledge of icons and logo. I am Certified in full stack web development from University of Adelaide, have trained with  MERN stack (Mongo DB, Express Server, React JS, Node JS), PWA (Progressive Web App), testing with Jest, and familiar with JIRA, Github and Gitlab. Also, experienced and versed in Scrum and Agile. ")
+    const [aboutMeParagraphOne, setAboutMe] = useState(
+        `I'm Pradeep Marasini, Front End Web Developer.I’ve been honing my skills in design, production, building, and maintaining responsive websites and building products for banks.`)
+
+    const [aboutMeParagraphTwo, setAboutMe] = useState(
+        ` I strive to create elegant solutions that surprise and delight users, while keeping complex technical dependencies in mind for implementation, scalability and developer sanity.`)
+
+    // I’ve worked with small, agile teams on payment projects  spanning multiple years.
+
+    // I'm certified in full stack web development from University of Adelaide, and trained with Mongo DB, React JS, Node JS, Express, Progressive Web App, Jest and many more. Also, familiar with Next JS, GraphQL, Apollo, Yoga, Prisma, JIRA, Github, Gitlab and versed in Scrum and Agile.`)
 
     return (
         <div className="About">
-        <div className='about'>
-            <div item xs={12} className='about-content'>
-                <h1><Fade bottom cascade>About.</Fade></h1>
-                <Fade bottom>
-                    <p>{aboutMe}</p>
-                </Fade>
-              
+            <div className='about'>
+                <div item xs={12} className='about-content'>
+                    <h1><Fade bottom cascade>About.</Fade></h1>
+                    <Fade bottom>
+                        <p>{aboutMeParagraphOne}</p><br />
+                        <p>{aboutMeParagraphTwo}</p>
+                    </Fade>
+
+                </div>
+                <img src=""></img>
             </div>
-            <img src={portfolio} alt='about imge'></img>
-        </div>
         </div>
     );
 }
