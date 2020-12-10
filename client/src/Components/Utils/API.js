@@ -25,18 +25,9 @@ export default [
             demoLink: "https://www.youtube.com/watch?v=BXcqKEGlIlA&feature=youtu.be&ab_channel=PradeepMarasini",
 
             technoligiesUsed: [
-                "HTML5",
-                "CSS3",
-                "Javascript",
-                "ES6+",
-                "React",
-                "React Hooks",
-                "Context API",
-                "Reducer",
-                "Material UI",
-                "Io.socket",
-                "JWT AUthentication",
-                "Multer"
+                "Front End: HTML5, CSS3, Javascript,React, React Hooks and Context API, Reducer, Material UI,Io.socket ",
+                "Back End :Node JS, Express, Mongo DB, Mongoose, JWT AUthentication,Multer ",
+                "Deployment/ Others : Heroku, Github"
             ],
             images: [
                 {
@@ -64,15 +55,8 @@ export default [
             demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
 
             technoligiesUsed: [
-                "HTML5",
-                "CSS3",
-                "Javascript",
-                "ES6+",
-                "React",
-                "React Hooks",
-                "context API",
-                "Reducer",
-                "Material UI"
+                "Front End: HTML5, CSS3, Javascript, React, React Hooks and Context API, Reducer, Material UI",
+                "Deployment/ Others : Heroku, Github"
             ],
             images: [
                 {
@@ -100,14 +84,8 @@ export default [
             liveLink: "https://marasinipradeep.github.io/employee-directory/",
 
             technoligiesUsed: [
-                "HTML5",
-                "CSS3",
-                "Javascript",
-                "ES6+",
-                "React",
-                "React Components",
-                "React class based state",
-                "Bootstrap"
+                "Front End: HTML5, CSS3, Javascript, React, Reducer, Bootstrap",
+                "Deployment/ Others : Heroku, Github"
             ],
             images: [
                 {
@@ -136,15 +114,9 @@ export default [
             demoLink: "https://www.youtube.com/watch?v=KxiwXnkHCB8&feature=youtu.be",
 
             technoligiesUsed: [
-                "HTML5",
-                "CSS3",
-                "Javascript",
-                "Node JS",
-                "Express JS",
-                "MySQL",
-                "Sequelize",
-                "HandleBar JS",
-                "Nexmo API"
+                "Front End: HTML5, CSS3, Javascript, Handlebars JS, Bootstrap ",
+                "Back End :Node JS, Express JS, MySQL, Sequelize, Nexmo API " ,
+                "Deployment/ Others : Heroku, Github"
             ],
             images: [
                 {
@@ -172,12 +144,8 @@ export default [
             liveLink: "https://marasinipradeep.github.io/music-app/",
 
             technoligiesUsed: [
-                "HTML5",
-                "CSS3",
-                "Javascript",
-                "jQuery",
-                "Foundation",
-                "Youtube/GIPHY APIS"
+                "Front End: HTML5, CSS3, Javascript, jQuery, Foundation, Youtube/GIPHY APIS ",
+                "Deployment/ Others : Github"
             ],
             images: [
                 {
@@ -205,12 +173,8 @@ export default [
             liveLink: "https://marasinipradeep.github.io/weather_dashboard/",
 
             technoligiesUsed: [
-                "HTML5",
-                "CSS3",
-                "Javascript",
-                "jQuery",
-                "Bootstrap",
-                "Weather API"
+                "Front End: HTML5, CSS3, Javascript, jQuery, Bootstrap, Weather API ",
+                "Deployment/ Others : Github"
             ],
             images: [
                 {
@@ -238,18 +202,11 @@ export default [
             liveLink: "https://citytech.global/",
 
             technoligiesUsed: [
-                "HTML5",
-                "CSS3",
-                "Javascript",
-                "jQuery",
-                "Bootstrap",
-                "C/C++",
-                "SqlLight",
-                "Java",
-                "PostgreSQL",
-                "Linux",
-                "QT"
+                "Front End: HTML5, CSS3, Javascript, jQuery, Bootstrap, QT, C, C++, Sqllite ",
+                "Back End : Java, PostgreSQL",
+                "Deployment/ Others : Centos, Gitlab, Linux "
             ],
+
             images: [
                 {
                     fields: {
@@ -261,7 +218,5 @@ export default [
             ]
         }
     },
-
-
 
 ];

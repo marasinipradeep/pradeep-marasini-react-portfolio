@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Grid } from '@material-ui/core';
 //Import profile image
-import portfolio from "../Images/portfolio.JPG"
+import portfolioTwo from "../Images/profilePicTwoBackuonep.png"
 
 export default function AboutMe() {
 
@@ -21,7 +21,8 @@ export default function AboutMe() {
     return (
         <div className="About">
             <div className='about'>
-                <div item xs={12} className='about-content'>
+                <div item xs={12} md={9} className='about-content'>
+               
                     <h1><Fade bottom cascade>About.</Fade></h1>
                     <Fade bottom>
                         <p>{aboutMeParagraphOne}</p>
@@ -31,7 +32,7 @@ export default function AboutMe() {
                     </Fade>
 
                 </div>
-                <img src=""></img>
+                <img src={portfolioTwo} alt='about imge' className="profileimage"></img>
             </div>
         </div>
     );

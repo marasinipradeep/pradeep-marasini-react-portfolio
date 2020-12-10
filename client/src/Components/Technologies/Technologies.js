@@ -11,8 +11,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
 
         margin: 'auto',
-        // backgroundColor: "#e2c779",
-        color: "black",
         marginBottom: "50px",
         width:"55%",
         height:"auto"
@@ -166,8 +164,8 @@ export default function Services() {
                         <Grid item xs container spacing={2} >
                             {state.map((project, i) => (
 
-                                <Grid item xs={12} md={4}>
-                                    <Card className={classes.root}>
+                                <Grid item xs={12} md={4} >
+                                    <Card className={classes.root} className="technology">
                                         <CardHeader
                                             avatar={<Avatar aria-label="recipe"
                                                 className={classes.avatar}>{project.fields.projectName.charAt(0)}</Avatar>}

@@ -127,10 +127,13 @@ li .link:hover{
 }
 
 .technology{
+  position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 5em;
   text-align: center;
   color: #ffffff;
+  left: 1em;
+  width:60%;
 }
 .proficientTechnologies {
   position: relative;
@@ -175,9 +178,20 @@ margin-left: 15em;
 width: 20em;  
 height:25em;
 }
+
+.caraousalSetting{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
 .contact{
   position: relative;
-  top:20em;
+  top:6em;
   left:15em;
   text-align: left;
 }
@@ -233,8 +247,6 @@ font-size: 5em;
 padding: 1em;
 margin-right: 0em;
 }
-
-
 .heading-background{
   display: none;
 }
@@ -242,18 +254,24 @@ nav{
   display: none;
 }
 .header-title{
-  font-size: 2.4em;
+  font-size: 2.7em;
   text-align: left;
-  top:0em;
-  left:1em;
+  top:-10em;
+  left:0em;
   margin-bottom: 0px;
 }
 .profileimage{
-    margin-top: 0px;
+  display: none;
+    /* margin-top: 0px;
     height: auto;
-     width: auto;
-
+     width: auto; */
 }
+
+.downloadCVBtn{
+  margin-top: 10em;
+  font-size: 0.1em;
+}
+
 .about{
   position: relative;
       display: flex;
@@ -266,18 +284,24 @@ nav{
   left:2em;
 }
 .about-content p{
-  font-size: 1.5em;
+  font-size: 2.5em;
   text-align: left;
   text-align: justify;
   max-width: 88vw;
 }
 
-.technology {
-  position: relative;
-  top: -100px;
+.proficientTechnologies {
+  top: -120px;
   font-size: 4em;
-  
+  left:1em;
 }
+
+.technology {
+  top: -100px;
+  left: 2em;
+  width:70%;
+}
+
 
 .work{
   left:2em;
@@ -292,6 +316,14 @@ nav{
 .project img{
 width: 45em;  
 height: 45em;
+}
+
+.caraousalSetting{
+  top:-10em;
+  width: 100%;
+  left: 1em;
+  font-size: 1.5em;
+
 }
 
 .contact{

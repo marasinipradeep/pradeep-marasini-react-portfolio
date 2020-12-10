@@ -47,7 +47,7 @@ function Header() {
                         <Zoom>
 
 
-                            <button>
+                            <button className="downloadCVBtn">
                                 <a href={process.env.PUBLIC_URL + "/pradeep_marasini_resume.pdf"} download >Download CV </a>
                             </button>
                         </Zoom>
