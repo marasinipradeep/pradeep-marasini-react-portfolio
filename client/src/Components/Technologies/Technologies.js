@@ -6,45 +6,17 @@ import { FaLaptop, FaLaptopCode, FaDatabase, FaExpand } from "react-icons/fa"
 import { red } from '@material-ui/core/colors';
 import { Grid } from '@material-ui/core';
 import Fade from 'react-reveal/Fade';
+import Flippy, { FrontSide, BackSide } from 'react-flippy';
+
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
-
         margin: 'auto',
-        marginBottom: "50px",
-        width:"55%",
-        height:"auto"
-        
-    },
-    media: {
-        height: 0,
-        paddingTop: '56.25%', // 16:9
-
-    },
-    expand: {
-        transform: 'rotate(0deg)',
-        margin: 'auto',
-
-        transition: theme.transitions.create('transform', {
-            duration: theme.transitions.duration.shortest,
-        }),
-    },
-    expandOpen: {
-        transform: 'rotate(180deg)',
-
     },
     avatar: {
         backgroundColor: red[500],
         fontSize: "35px"
-    },
-    cardHeader: {
-        backgroundColor: "#faf0db"
-    },
-    cardFooter: {
-        backgroundColor: "#f3e5ab"
-    },
-    description: {
-        color: "#112222"
     }
 }));
 
@@ -63,10 +35,7 @@ export default function Services() {
                     projectName: "Languages",
                     icon: <FaLaptop />,
                     technoligiesUsed: [
-                        "HTML",
-                        "CSS",
-                        "Javascript",
-                        "C/C++"
+                        "HTML, CSS, Javascript, C/C++"
                     ]
                 }
             },
@@ -78,10 +47,7 @@ export default function Services() {
                 fields: {
                     projectName: "Database",
                     technoligiesUsed: [
-                        "MySQL",
-                        "MongoDB",
-                        "Sqllite",
-                        "PostgreSQL"
+                        "MySQL, MongoDB, Sqllite, PostgreSQL"
                     ]
                 }
             },
@@ -92,10 +58,7 @@ export default function Services() {
                 fields: {
                     projectName: "CSS Libraries",
                     technoligiesUsed: [
-                        "Bootstrap",
-                        "Material UI",
-                        "Foundation",
-                        "Qt GUI",
+                        "Bootstrap, Material UI, Foundation, Styled Component, QT GUI"
                     ]
                 }
             },
@@ -107,12 +70,7 @@ export default function Services() {
                 fields: {
                     projectName: "Front End Libraries",
                     technoligiesUsed: [
-                        "React JS",
-                        "Next JS",
-                        "Apollo",
-                        "jQuery",
-                        "Handlebars JS",
-                        "Qt",
+                        "React JS, Next JS, Apollo,jQuery, Handlebars JS, Qt",
                     ]
                 }
             },
@@ -124,12 +82,7 @@ export default function Services() {
                 fields: {
                     projectName: "Back End Libraries",
                     technoligiesUsed: [
-                        "Node JS",
-                        "Express JS",
-                        "Yoga Server",
-                        "Prisma",
-                        "Sequilize",
-                        "Mongoose"
+                        "Node JS, Express JS, Yoga Server, Prisma, Sequilize, Mongoose"
                     ]
                 }
             },
@@ -140,12 +93,7 @@ export default function Services() {
                 fields: {
                     projectName: "Test/Other",
                     technoligiesUsed: [
-                        "Jest",
-                        "Bitbucket",
-                        "Jira",
-                        "Github",
-                        "Gitlab",
-                        "Heroku"
+                        "Jest, Bitbucket, Jira, Github, Gitlab, Heroku"
                     ]
                 }
             }
@@ -155,56 +103,60 @@ export default function Services() {
     const [expanded, setExpanded] = React.useState(true);
 
     return (
+
         <>
             {state.length ? (
-                
+
                 <div className="usedTechnologies">
                     <h1 className='proficientTechnologies'>Proficient Technologies.</h1>
-                    <Fade bottom>
-                        <Grid item xs container spacing={2} >
-                            {state.map((project, i) => (
+                    <Grid item xs container spacing={3} >
 
-                                <Grid item xs={12} md={4} >
+                        {state.map((project, i) => (
+                            <Grid item xs={12} md={4} >
+                                <Flippy
+                                    flipOnHover={true} // default false
+                                    flipOnClick={true} // default false
+                                    flipDirection="horizontal"
+                                >
                                     <Card className={classes.root} className="technology">
-                                        <CardHeader
-                                            avatar={<Avatar aria-label="recipe"
-                                                className={classes.avatar}>{project.fields.projectName.charAt(0)}</Avatar>}
-                                            action={<IconButton aria-label="settings"></IconButton>}
-                                            titleTypographyProps={{ variant: "h4" }}
-                                            title={project.fields.projectName}
-                                        />
-
-
-
-                                        <Collapse in={expanded} timeout="auto" unmountOnExit>
-                                            <CardContent>
-
-                                                {project.fields.technoligiesUsed.map(technoligiesUsed => (
-                                                    <div>
-                                                        <Typography paragraph variant="h6">
-                                                            {technoligiesUsed}
-                                                        </Typography>
-                                                    </div>
-
-                                                ))}
-
-                                            </CardContent>
-
-                                        </Collapse>
+                                        <FrontSide style={{ backgroundColor: 'grey' }} >
+                                            <CardHeader
+                                                avatar={<Avatar aria-label="recipe"
+                                                    className={classes.avatar}>{project.fields.projectName.charAt(0)}</Avatar>}
+                                                action={<IconButton aria-label="settings"></IconButton>}
+                                                titleTypographyProps={{ variant: "h4" }}
+                                                title={project.fields.projectName} />
+                                        </FrontSide>
                                     </Card>
-                                </Grid>
+                                    <BackSide style={{ backgroundColor: 'grey' }}>
 
-                            ))}
+                                        {project.fields.technoligiesUsed.map(technoligiesUsed => (
+                                            <div>
+                                                <CardContent>
+                                                    <Typography paragraph variant="h6">
+                                                        {technoligiesUsed}
+                                                    </Typography>
+                                                </CardContent>
+                                            </div>
 
-                        </Grid>
-                    </Fade>
+                                        ))}
+                                    </BackSide>
+                                </Flippy>
+                            </Grid>
+                        ))}
+
+                    </Grid>
 
                 </div>
+
+
             ) :
                 (
+
                     <h3>No projects Found</h3>
 
-                )}
+                )
+            }
         </>
     );
 }

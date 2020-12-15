@@ -10,7 +10,8 @@ import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-u
 
 import Technologies from "../Components/Technologies/Technologies";
 import Projects from "../Components/Projects/Projects";
-import CardSlides from "../Components/CardSlide/CardSlide"
+import CardSlides from "../Components/CardSlide/CardSlide";
+import FlipCards from "../Components/FlipCards/FlipCards";
 
 
 
@@ -44,6 +45,7 @@ export default function Home() {
             <Header />
             <AboutMe />
             <Technologies />
+            {/* <FlipCards/> */}
             <CardSlides/>
             {/* <Projects/> */}
             <ContactMe />

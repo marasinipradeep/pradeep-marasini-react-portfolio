@@ -16,6 +16,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-file-download": "^0.3.5",
+    "react-flippy": "^0.1.5",
     "react-icons": "^3.11.0",
     "react-material-ui-carousel": "^2.1.1",
     "react-reveal": "^1.2.2",

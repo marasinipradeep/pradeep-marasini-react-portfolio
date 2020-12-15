@@ -129,12 +129,12 @@ li .link:hover{
 .technology{
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
   text-align: center;
   color: #ffffff;
   left: 1em;
-  width:60%;
+  width:80%;
 }
+
 .proficientTechnologies {
   position: relative;
   left:4em;
@@ -299,7 +299,6 @@ nav{
 .technology {
   top: -100px;
   left: 2em;
-  width:70%;
 }
 
 
