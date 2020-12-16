@@ -38,12 +38,7 @@ header{
   justify-content: center;
   align-items: center;
 }
-/* header h1{
-font-size: 1em;
-font-weight: 400;  
-padding: 2em;
-margin-right: 50em;
-} */
+
 nav{
   position: fixed;
   left: 50em;
@@ -125,21 +120,16 @@ li .link:hover{
   text-align: left;
   width: 40em;
 }
-
-.technology{
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  color: #ffffff;
-  left: 1em;
-  width:80%;
-}
-
 .proficientTechnologies {
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   left:4em;
   color: #ffffff;
+  font-size: 2em;
+  width: 90%;
 }
+
+
 .profileimage{
   margin-top: 150px;
   height: auto;
@@ -181,7 +171,6 @@ height:25em;
 
 .caraousalSetting{
   position: relative;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   text-align: center;
   justify-content: center;
@@ -191,7 +180,7 @@ height:25em;
 }
 .contact{
   position: relative;
-  top:6em;
+  top:15em;
   left:15em;
   text-align: left;
 }
@@ -262,9 +251,6 @@ nav{
 }
 .profileimage{
   display: none;
-    /* margin-top: 0px;
-    height: auto;
-     width: auto; */
 }
 
 .downloadCVBtn{
@@ -292,14 +278,14 @@ nav{
 
 .proficientTechnologies {
   top: -120px;
-  font-size: 4em;
+  font-size: 2.5em;
   left:1em;
+  width: 98%;
 }
 
-.technology {
-  top: -100px;
-  left: 2em;
-}
+ .proficientTechnologiesBackSIde {
+  font-size: 2.5em;
+} 
 
 
 .work{
@@ -319,8 +305,8 @@ height: 45em;
 
 .caraousalSetting{
   top:-10em;
-  width: 100%;
-  left: 1em;
+  width: 97%;
+  left: 0em;
   font-size: 1.5em;
 
 }
@@ -479,8 +465,7 @@ nav li{
   width: 500px;
  border-radius: 20%
 }
-.technology{
-}
+
 
 .work{
   left:10em;

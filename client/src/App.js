@@ -7,7 +7,6 @@ import {ProjectsProvider} from "./Components/Utils/ProjectsContext"
 import './App.css';
 
 import Home from "./Pages/Home"
-import Projects from "./Pages/Projects"
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <ProjectsProvider>
       <Switch>
         <Route exact path="/" component={Home}></Route>
-        <Route exact path="/projects" component={Projects}></Route>
       </Switch>
       </ProjectsProvider>
       </div>
