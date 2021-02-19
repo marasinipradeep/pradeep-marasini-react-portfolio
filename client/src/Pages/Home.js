@@ -9,7 +9,7 @@ import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-u
 
 import UsedTechnologiesFlip from "../Components/UsedTechnologiesFlip/UsedTechnologiesFlip";
 import RecentProjectsSlides from "../Components/RecentProjectsSlides/RecentProjectsSlides";
-
+import Projects from "../Components/Projects/Projects";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -28,7 +28,8 @@ export default function Home() {
             <Header />
             <AboutMe />
             <UsedTechnologiesFlip />
-            <RecentProjectsSlides/>
+            {/* <RecentProjectsSlides/> */}
+            <Projects/>
             <ContactMe />
         </Grid>
     )

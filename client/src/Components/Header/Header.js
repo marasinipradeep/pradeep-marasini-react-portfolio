@@ -3,8 +3,6 @@ import { Fade, Flip, Rotate, Zoom, Bounce, Slide, Roll, LightSpeed } from 'react
 import ParticlesBg from "particles-bg";
 import { Grid } from '@material-ui/core';
 //Import profile image
-import portfolio from "../Images/profilePic.jpg"
-import portfolioOne from "../Images/profilePicOne.jpg"
 import portfolioTwo from "../Images/profilePicTwo.png"
 
 
