@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { ProjectsProvider } from "./Components/Utils/ProjectsContext"
 
 import './App.css';
-import css from './styles/style.styl';
 
 import Home from "./Pages/Home"
 
