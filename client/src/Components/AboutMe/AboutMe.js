@@ -22,7 +22,7 @@ export default function AboutMe() {
         <div className="About">
             <div className='about'>
                 <div item xs={12} md={9} className='about-content'>
-               
+
                     <h1><Fade bottom cascade>About.</Fade></h1>
                     <Fade bottom>
                         <p>{aboutMeParagraphOne}</p>
