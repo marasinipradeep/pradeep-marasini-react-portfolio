@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Grid } from '@material-ui/core';
 //Import profile image
 import portfolioTwo from "../Images/profilePicTwoBackuonep.png"
+//import portfolioTwo from "../Images/linkedin.jpg"
 
 export default function AboutMe() {
 

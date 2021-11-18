@@ -10,6 +10,8 @@ import { Paper, Grid, makeStyles, Typography, Box, Container } from '@material-u
 import UsedTechnologiesFlip from "../Components/UsedTechnologiesFlip/UsedTechnologiesFlip";
 import RecentProjectsSlides from "../Components/RecentProjectsSlides/RecentProjectsSlides";
 
+import Projects from "../Components/Projects/Projects";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,16 +21,19 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
     const classes = useStyles();
     return (
-     
+
         <Grid className={classes.root} item xs container spacing={0}>
-            <Grid item xs={12} display={{ xs: 'block', md: 'block' }}>
-            <Navbar />
+            <Grid className="row">
+                <Grid item xs={12} display={{ xs: 'block', md: 'block' }}>
+                    <Navbar />
+                </Grid>
+                <Header />
+                <AboutMe/>
+                <UsedTechnologiesFlip />
+                {/* <RecentProjectsSlides /> */}
+                <Projects />
+                <ContactMe />
             </Grid>
-            <Header />
-            <AboutMe />
-            <UsedTechnologiesFlip />
-            <RecentProjectsSlides/>
-            <ContactMe />
         </Grid>
     )
 }

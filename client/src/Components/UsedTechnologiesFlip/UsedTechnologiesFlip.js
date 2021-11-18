@@ -35,7 +35,7 @@ export default function Services() {
                     projectName: "Languages",
                     icon: <FaLaptop />,
                     technoligiesUsed: [
-                        "HTML, CSS, Javascript, C/C++"
+                        "HTML, CSS, Javascript"
                     ]
                 }
             },
@@ -47,7 +47,7 @@ export default function Services() {
                 fields: {
                     projectName: "Database",
                     technoligiesUsed: [
-                        "MySQL, MongoDB, Sqllite, PostgreSQL"
+                        "MySQL, MongoDB"
                     ]
                 }
             },
@@ -58,7 +58,7 @@ export default function Services() {
                 fields: {
                     projectName: "CSS",
                     technoligiesUsed: [
-                        "Bootstrap, Material UI, Foundation, Styled Component, QT GUI"
+                        "Bootstrap, Material UI"
                     ]
                 }
             },
@@ -70,7 +70,7 @@ export default function Services() {
                 fields: {
                     projectName: "Front End",
                     technoligiesUsed: [
-                        "React JS, Next JS, Apollo,jQuery, Handlebars JS, Qt",
+                        "React JS, Next JS, jQuery, Handlebars JS",
                     ]
                 }
             },
@@ -82,7 +82,7 @@ export default function Services() {
                 fields: {
                     projectName: "Back End",
                     technoligiesUsed: [
-                        "Node JS, Express JS, Yoga Server, Prisma, Sequilize, Mongoose"
+                        "Node JS, Express JS, Sequilize, Mongoose"
                     ]
                 }
             },
@@ -93,7 +93,7 @@ export default function Services() {
                 fields: {
                     projectName: "Test/Other",
                     technoligiesUsed: [
-                        "Jest, Bitbucket, Jira, Github, Gitlab, Heroku"
+                        "Jest, Bitbucket, Github, Heroku"
                     ]
                 }
             }
@@ -109,7 +109,7 @@ export default function Services() {
 
                 <div className="proficientTechnologies" >
 
-                    <h1 >Proficient Technologies.</h1>
+                    <h1 >Trained With.</h1>
 
                     <Grid item xs container spacing={4} >
 
