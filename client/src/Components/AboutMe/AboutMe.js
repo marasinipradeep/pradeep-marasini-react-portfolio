@@ -8,7 +8,8 @@ export default function AboutMe() {
 
     //Setting state
     const [aboutMeParagraphOne, setAboutMeOne] = useState(
-        `I'm Pradeep Marasini, Front End Web Developer.I’ve been honing my skills in design, production, building, and maintaining responsive websites.`)
+        `An accomplished and adept professional with years of experience in the IT and hospitality industry. Proficient
+        in IT hardware maintenance, IT application support, and software development. Certified full-stack web developer from the University of Adelaide, trained with MySQL, MongoDB, React, Node.js, and many more.`)
 
     const [aboutMeParagraphTwo, setAboutMeTwo] = useState(
         ` I strive to create elegant solutions that surprise and delight users, while keeping complex technical dependencies in mind for implementation, scalability and developer sanity.`)
@@ -26,9 +27,9 @@ export default function AboutMe() {
                     <h1><Fade bottom cascade>About.</Fade></h1>
                     <Fade bottom>
                         <p>{aboutMeParagraphOne}</p>
-                        <p>{aboutMeParagraphTwo}</p>
+                        {/* <p>{aboutMeParagraphTwo}</p>
                         <p>{aboutMeParagraphThree}</p>
-                        <p>{aboutMeParagraphFour}</p>
+                        <p>{aboutMeParagraphFour}</p> */}
                     </Fade>
 
                 </div>
